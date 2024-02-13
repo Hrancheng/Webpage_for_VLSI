@@ -32,14 +32,14 @@ export default {
       length: 4,
       window: 0,
       file_path: [
-        ["src/assets/New_wearable.png",
-        "src/assets/New_wearable.png"],
-        ["src/assets/Root_of_trust_1.png",
-        "src/assets/Root_of_trust_2.png"],
-        ["src/assets/Group_2.png",
-        "src/assets/Group_1.png"],
-        ["src/assets/Accelerating_sensor_1.png",
-        "src/assets/Accelerating_sensor_2.png"]
+        ["public/assets/New_wearable.png",
+        "public/assets/New_wearable.png"],
+        ["public/assets/Root_of_trust_1.png",
+        "public/assets/Root_of_trust_2.png"],
+        ["public/assets/Group_2.png",
+        "spublic/assets/Group_1.png"],
+        ["public/assets/Accelerating_sensor_1.png",
+        "public/assets/Accelerating_sensor_2.png"]
         // Update the file names as necessary
       ],
       descriptions: [
