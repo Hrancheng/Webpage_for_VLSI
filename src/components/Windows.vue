@@ -38,8 +38,8 @@ export default {
         "/assets/Root_of_trust_2.png"],
         ["/assets/Group_2.png",
         "/assets/Group_1.png"],
-        ["/assets/Accelerating_sensor_1.png",
-        "/assets/Accelerating_sensor_2.png"]
+        ["/assets/Accelerating_sensor_2.png",
+        "/assets/Accelerating_sensor_1.png"]
         // Update the file names as necessary
       ],
       descriptions: [
