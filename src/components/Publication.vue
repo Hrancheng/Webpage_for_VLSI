@@ -1,0 +1,98 @@
+<template>
+  <div class="research-container">
+     <HeaderBar />
+    <h2 class="section-title">Publications</h2>
+    <p class="google-scholar">
+      Please also visit my <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="scholar-link">Google Scholar page</a> for an updated catalogue. This is a list of recent publications from my research:
+    </p>
+    <div class="publications">
+      <div class="year-group" v-for="(publications, year) in groupedPublications" :key="year">
+        <h3 class="year">{{ year }}</h3>
+        <ul class="publication-list">
+          <li v-for="publication in publications" :key="publication.title" class="publication">
+            {{ publication.authors.join(', ') }}, {{ publication.title }}, {{ publication.source }} ({{ publication.status }})
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import HeaderBar from './HeaderBar.vue';
+export default {
+  components: { HeaderBar },
+  name: 'Research',
+  data() {
+    return {
+      groupedPublications: {
+        '2020': [
+          // ... Add other publications here
+        ],
+        '2021': [
+          // ... Add other publications here
+        ],
+        '2022': [
+          // ... Add other publications here
+        ],
+        '2023': [
+          // ... Add other publications here
+        ],
+        '2024': [
+          {
+            authors: ['A Li', 'J Lee', 'P Mukim', 'BD. Hoskins', 'P Shrestha', 'DD Wentzloff', 'D Blaauw', 'D Sylvester', 'M Saligane'],
+            title: 'A fully integrated, automatically generated DC-DC converter maintaining > 75% efficiency from 398 K down to 23 K across wide load ranges in 12 nm FinFET',
+            source: 'IEEE Solid-State Circuits Letters',
+            status: 'under review'
+          },
+        ]
+      }
+    };
+  }
+}
+</script>
+
+<style scoped>
+
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.google-scholar {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.scholar-link {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.scholar-link:hover {
+  text-decoration: underline;
+}
+
+.year-group {
+  margin-bottom: 20px;
+}
+
+.year {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.publication-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.publication {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+</style>

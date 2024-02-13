@@ -4,11 +4,11 @@
     <nav class="navigation">
       <ul>
         <li><router-link to="/home">Home</router-link></li>
-        <li><a href="#">News</a></li>
+        <li><router-link to="/news">News</router-link></li>
         <li><router-link to="/people">People</router-link></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Publication</a></li>
-        <li><a href="#">Teaching</a></li>
+        <li><router-link to="/research">Research</router-link></li>
+        <li><router-link to="/publication">Publication</router-link></li>
+        <li><router-link to="/teaching">Teaching</router-link></li>
         <!-- ...other navigation items -->
       </ul>
     </nav>

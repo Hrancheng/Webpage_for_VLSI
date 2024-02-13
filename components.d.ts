@@ -12,9 +12,13 @@ declare module 'vue' {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Homepage: typeof import('./src/components/Homepage.vue')['default']
     MainContent: typeof import('./src/components/MainContent.vue')['default']
+    News: typeof import('./src/components/News.vue')['default']
     People: typeof import('./src/components/People.vue')['default']
+    Publication: typeof import('./src/components/Publication.vue')['default']
+    Research: typeof import('./src/components/Research.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Teaching: typeof import('./src/components/Teaching.vue')['default']
     Windows: typeof import('./src/components/Windows.vue')['default']
   }
 }

@@ -4,10 +4,18 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 // Import your components
 import Homepage from '@/components/Homepage.vue';
 import People from '@/components/People.vue';
+import News from '@/components/News.vue';
+import Publication from '@/components/Publication.vue';
+import Research from '@/components/Research.vue';
+import Teaching from '@/components/Teaching.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', name: 'Home', component: Homepage, alias: '/home'},
   { path: '/people', name: 'People', component: People },
+  { path: '/news', name: 'news', component: News },
+  { path: '/publication', name: 'publication', component: Publication},
+  { path: '/research', name: 'research', component: Research},
+  { path: '/teaching', name: 'teaching', component: Teaching},
   // ... other routes
 ];
 
