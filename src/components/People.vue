@@ -1,7 +1,7 @@
 <template>
   <div class="people-section">
     <HeaderBar />
-    <h1>Ph.D. Students(Sorted by Time of Joining, Newest First)</h1>
+    <h1 class="phd-students-heading">Ph.D. Students(Sorted by Time of Joining, Newest First)</h1>
     <div class="student" v-for="student in phdStudents" :key="student.name">
       <img :src="student.image" alt="Photo of student" class="student-photo" />
       <div class="student-info">
@@ -50,6 +50,14 @@ export default {
 }
 
 /* This is just a guess of your header-bar class. Adjust according to your actual HeaderBar component's styles */
+
+.phd-students-heading {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333; /* Adjust the color as needed */
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 
 .student {
