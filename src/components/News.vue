@@ -30,14 +30,8 @@ export default {
 
 <style scoped>
 
-.news-container {
-  max-width: 800px; /* Set a max-width for better readability */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add some padding */
-}
-
 .title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center; /* Center the title */
@@ -47,7 +41,6 @@ export default {
   color: #666;
   font-size: 14px;
   margin-bottom: 20px;
-  text-align: center; /* Center the author-date */
 }
 
 .content {
@@ -59,7 +52,6 @@ export default {
 .workshop-homepage {
   font-size: 16px;
   margin-top: 20px;
-  text-align: center; /* Center the workshop homepage links */
 }
 
 .link {
