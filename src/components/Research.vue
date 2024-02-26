@@ -9,7 +9,7 @@
       </div>
     <!-- Additional project cards can be added here -->
     <h1 class="title">Cryogenic / Nano Device Technology</h1>
-      <img src="/assets/NanoTech.png" alt="OpenFASoC Image" class="project-photo" />
+      <img src="/assets/nanoTech.png" alt="OpenFASoC Image" class="project-photo" />
       <div class="content">
         <h2 class="subtitle">NIST Nanotechnology Accelerator</h2>
         <p>NIST Nanofab accelerator is an initiative aimed at creating an open-source active substrate for novel nano device fabrication and characterization. We submitted a large number of useful active elements ranging from signal generators, CV test structures, PLL, OPAMPs, and more. Taped-out in SKY130 - Nov 2023
