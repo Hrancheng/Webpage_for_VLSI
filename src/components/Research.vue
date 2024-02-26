@@ -9,17 +9,22 @@
       </div>
     <!-- Additional project cards can be added here -->
     <h1 class="title">Cryogenic / Nano Device Technology</h1>
-      <img src="/assets/OpenFASoc.png" alt="OpenFASoC Image" class="project-photo" />
+      <img src="/assets/NanoTech.png" alt="OpenFASoC Image" class="project-photo" />
       <div class="content">
         <h2 class="subtitle">NIST Nanotechnology Accelerator</h2>
         <p>NIST Nanofab accelerator is an initiative aimed at creating an open-source active substrate for novel nano device fabrication and characterization. We submitted a large number of useful active elements ranging from signal generators, CV test structures, PLL, OPAMPs, and more. Taped-out in SKY130 - Nov 2023
       </p>
       </div>
       <h1 class="title">Memristor Characterization Array</h1>
+      <img src="/assets/Memristor.png" alt="OpenFASoC Image" class="project-photo" />
+      <div class="content">
+        <p>This project focuses on creating a memory array using phase-change devices like memristors. Taped-out in SKY130 - Nov 2023</p>
+      </div>
+      <h1 class="title">Novel Quantum FinFET Device Research</h1>
       <img src="/assets/OpenFASoc.png" alt="OpenFASoC Image" class="project-photo" />
       <div class="content">
         <h2 class="subtitle">GLayout</h2>
-        <p>This project focuses on creating a memory array using phase-change devices like memristors. Taped-out in SKY130 - Nov 2023</p>
+        <p>GLayout is a Cloud-Based Automatic Analog Layout & Netlist Generator with a Reinforcement-Learning Optimizer. We demonstrated this framework with automated generation, evaluation, and optimization of a wide range of room-temperature and cryogenic OPAMPs. Taped-out in SKY130. – Nov 2023</p>
       </div>
     <div class="footer">
       <p>– Nov 2023</p>
