@@ -1,22 +1,20 @@
-<template>
+<<template>
+<HeaderBar />
   <div class="news-container">
-    <HeaderBar />
-    <h1 class="title">Hosting A USA–Japan Collaborative Workshop in Fukuoka, Japan</h1>
-    <p class="author-date">written by Mehdi Saligane on 2023-11-09</p>
-    <p class="content">
-      The semiconductor industry faces many challenges related to supply chain shortages
-      and over reliance on a small number of chip fabrication facilities. To enhance
-      global economic security and prosperity, the American and Japanese governments are
-      collaborating on a workforce training program with a specific focus on the
-      semiconductor industry.
-    </p>
-    <p class="content">
-      The first phase of this project is a 2-day online workshop, held December 5-6,
-      2023 (8-11:30am JST, 6-9:30pm EST), featuring experts in the field of integrated
-      circuit design from both academia and industry.
-    </p>
-    <div class="workshop-homepage">
-      Workshop Homepage: <a href="#" class="link">English</a> | <a href="#" class="link">日本語</a>
+    <h1 class="title">{{ currentArticle.title }}</h1>
+    <p class="author-date" v-if="currentArticle.title !== 'Coming Soon'">written by {{ currentArticle.author }} on {{ currentArticle.date }}</p>
+    <div class="content-container">
+      <p class="content" v-html="currentArticle.content">
+        
+      </p>
+    </div>
+    <div class="workshop-homepage"  v-if="currentArticle.title !== 'Coming Soon'">
+      Workshop Homepage: <a :href="currentArticle.homepageLinkEnglish" class="link">English</a> | 
+      <a :href="currentArticle.homepageLinkJapanese" class="link">日本語</a>
+    </div>
+    <div class="button-container">
+      <button @click="goToPrevious" :disabled="currentArticleIndex === 0">Previous</button>
+      <button @click="goToNext" :disabled="currentArticleIndex === newsArticles.length - 1">Next</button>
     </div>
   </div>
 </template>
@@ -24,11 +22,54 @@
 <script>
 export default {
   name: 'News',
-  // You can add your Vue instance properties here
+  data() {
+    return {
+      currentArticleIndex: 0,
+      newsArticles: [
+        {
+          title: "Hosting A USA–Japan Collaborative Workshop in Fukuoka, Japan",
+          author: "Mehdi Saligane",
+          date: "2023-11-09",
+          content: "The semiconductor industry faces many challenges related to supply chain shortages and over reliance on a small number of chip fabrication facilities. To enhance global economic security and prosperity, the American and Japanese governments are collaborating on a workforce training program with a specific focus on the semiconductor industry.<br><br> The first phase of this project is a 2-day online workshop , held December 5-6, 2023 (8-11:30am JST, 6-9:30pm EST), featuring experts in the field of integrated circuit design from both academia and industry.",
+          homepageLinkEnglish: "https://sites.google.com/cpc-lab.org/ic-design-ws-e",
+          homepageLinkJapanese: "https://sites.google.com/cpc-lab.org/ic-design-ws-j"
+        },
+        {
+          title: "Coming Soon",
+          author: "",
+          date: "",
+          content: "",
+          homepageLinkEnglish: "https://sites.google.com/cpc-lab.org/ic-design-ws-e",
+          homepageLinkJapanese: "https://sites.google.com/cpc-lab.org/ic-design-ws-j"
+        },
+        // Add more articles here
+      ]
+    };
+  },
+  computed: {
+    currentArticle() {
+      return this.newsArticles[this.currentArticleIndex];
+    }
+  },
+  methods: {
+    goToPrevious() {
+      if (this.currentArticleIndex > 0) {
+        this.currentArticleIndex--;
+      }
+    },
+    goToNext() {
+      if (this.currentArticleIndex < this.newsArticles.length - 1) {
+        this.currentArticleIndex++;
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
+.news-container {
+  padding: 20px; /* Add padding around the entire container */
+}
 
 .title {
   font-size: 24px;
@@ -41,6 +82,11 @@ export default {
   color: #666;
   font-size: 14px;
   margin-bottom: 20px;
+  text-align: center; /* Center the author and date */
+}
+
+.content-container {
+  margin-left: 20px; /* Add some space to the left of the content */
 }
 
 .content {
@@ -52,6 +98,7 @@ export default {
 .workshop-homepage {
   font-size: 16px;
   margin-top: 20px;
+  text-align: center; /* Center the workshop homepage links */
 }
 
 .link {
@@ -62,4 +109,34 @@ export default {
 .link:hover {
   text-decoration: underline;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
 </style>

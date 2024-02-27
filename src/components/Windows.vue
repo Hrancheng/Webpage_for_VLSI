@@ -44,7 +44,7 @@ export default {
       ],
       descriptions: [
         'Picture on the left is Strain Gauge for structure Bending/vibration monitoring. Picture on the right is Composite Electro-Chemical Sensor for Human Biometric Measurements. Those two are Intended Applications of the LIG Sensors.',
-        'Those are FPGA emulation (left) and Silicon 22nm Implementation (right). ',
+        'FPGA emulation (left) and Silicon 22nm Implementation (right). ',
         'Cloud-generated OPAMP Layouts using Cryogenic Models and Open-Source Toolchain.',
         'Intel has provided us as well with their 16nm Shuttle where we used to built 3 fairly complicated testchips, one of them is a complete opentitan RoT with security blocks, noise injection circuits for power obfuscation and side channel attack mitigation techniques The 1st tapeout was in Nov. 2022 and last one was over last week which also include a 2.8GS/s TI ADC  (6.5bit ENOB by top posim)',
         'Description for Card 5',
@@ -102,9 +102,17 @@ export default {
   max-height: 100%;
 }
 
+.description-container {
+  width: 100%; /* Full width to allow padding */
+  padding: 0 1rem; /* Add horizontal padding to the description */
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center the content horizontally */
+}
 
 .slider-description {
   font-size: 1.2rem;
-  padding: 0 1rem;
+  max-width: 100%; /* Ensure the description does not exceed the container width */
 }
+
+
 </style>
