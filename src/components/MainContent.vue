@@ -24,10 +24,12 @@ If you are interested in this type of research, please email me a resume and giv
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 .main-content {
   max-width: 1200px; /* Set maximum width of the content */
   margin: 0 auto; /* Center the content */
   padding: 20px; /* Add some padding around the content */
+  font-family: 'Quicksand', sans-serif;
 }
 
 .intro h1 {
