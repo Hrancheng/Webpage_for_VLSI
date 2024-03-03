@@ -125,7 +125,7 @@ export default {
 }
 
 .project-photo {
-  width: 36%;  /* Make the image smaller */
+  width: 30%;  /* Make the image smaller */
   height: auto;
   border-radius: 8px;
   margin-right: 20px;
@@ -138,6 +138,7 @@ export default {
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
+  padding: 20px;
 }
 
 .footer {
