@@ -23,7 +23,7 @@ export default {
   components: {
     HeaderBar,
     MainContent,
-    Windows,
+    //Windows,
   },
 }
 </script>
