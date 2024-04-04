@@ -7,7 +7,7 @@
     <MainContent />
 
     <!-- Windows component -->
-    <Windows />
+    <!--Windows -->
   </div>
 </template>
 

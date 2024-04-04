@@ -78,7 +78,7 @@
 </div>
 
 </div>
-
+<p> A full list of projects please visit the <router-link to="/research">Research</router-link> page.</p>
 </template>
 
 <script>

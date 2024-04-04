@@ -125,10 +125,11 @@ export default {
 }
 
 .project-photo {
-  width: 30%;  /* Make the image smaller */
+ width: 17%;  /* Make the image smaller */
   height: auto;
   border-radius: 8px;
-  margin-right: 20px;
+  margin-left: 50px;  /* Add space to the left of the image */
+  margin-right: 70px;
   margin-bottom: 20px;  /* Add space between images */
 }
 
