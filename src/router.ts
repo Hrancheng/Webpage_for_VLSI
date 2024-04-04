@@ -12,6 +12,7 @@ import About from '@/components/About.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', name: 'Home', component: Homepage, alias: '/home'},
+  { path: '/about', name: 'About', component: About},
   { path: '/people', name: 'People', component: People },
   { path: '/news', name: 'news', component: News },
   { path: '/publication', name: 'publication', component: Publication},
