@@ -106,7 +106,6 @@
 <script>
 export default {
   name: 'Project',
-  // You can add your Vue instance properties and methods here
 }
 </script>
 

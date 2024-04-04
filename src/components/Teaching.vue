@@ -4,9 +4,7 @@
     <h2 class="section-title">Teaching</h2>
 
     <div class="under-construction">
-      <!-- Replace 'under-construction.jpg' with the path to your actual under construction image -->
-      <!-- If you have an image, uncomment and use the following line -->
-      <!-- <img src="/path/to/under-construction.jpg" alt="Under Construction" /> -->
+      
     </div>
 
     <div class="courses">
@@ -26,7 +24,6 @@
 <script>
 export default {
   name: 'Teaching',
-  // You can add your Vue instance properties and methods here
 }
 </script>
 

@@ -33,7 +33,7 @@ export default {
 }
 
 .logo {
-  width: 100px; /* Adjust based on your logo's size */
+  width: 100px;
 }
 
 .navigation ul {

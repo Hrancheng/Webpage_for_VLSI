@@ -82,8 +82,7 @@
 
 <script>
 export default {
-  name: 'ResearchGroup',
-  // You can add your Vue instance properties and methods here
+  name: 'HomePageContent',
 }
 </script>
 
@@ -94,7 +93,7 @@ export default {
 }
 .container {
   margin: 0 auto;
-  padding-left: 20px; /* Adjust for left edge alignment */
+  padding-left: 20px;
   text-align: left; /* Align text to the left */
 }
 
@@ -157,7 +156,7 @@ h1 {
 }
 
 a {
-  color: #0000EE; /* Typical email link color */
+  color: #0000EE;
 }
 
 h2, h4 {

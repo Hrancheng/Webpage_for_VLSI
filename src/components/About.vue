@@ -84,7 +84,6 @@
 <script>
 export default {
   name: 'ResearchGroup',
-  // You can add your Vue instance properties and methods here
 }
 </script>
 
@@ -154,11 +153,11 @@ h1 {
 }
 
 .open-source {
-  padding-bottom: 50px; /* Indent list items */
+  padding-bottom: 50px;
 }
 
 a {
-  color: #0000EE; /* Typical email link color */
+  color: #0000EE;
 }
 
 h2, h4 {
