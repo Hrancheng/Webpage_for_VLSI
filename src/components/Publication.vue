@@ -1,3 +1,4 @@
+<!-- This is Vue component for main part of Publication page -->
 <template>
 <HeaderBar />
   <div class="research-container">

@@ -1,3 +1,4 @@
+<!--This is for sliding winoows which has been deleted-->
 <template>
   <v-window v-model="window" show-arrows class="window-slider">
     <v-window-item v-for="(n, index) in length" :key="n">

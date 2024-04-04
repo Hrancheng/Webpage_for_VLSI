@@ -1,4 +1,6 @@
+
 <template>
+<!--This is for About page which has been deleted-->
   <HeaderBar />
   <div class="container">
     <h2>Welcome to Mehdi's VLSI Research Group</h2>

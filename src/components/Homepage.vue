@@ -1,4 +1,5 @@
 <template>
+<!-- This is Vue component for webpage Home. Modify MainContent.vue to modify Home page -->
   <div id="app">
     <!-- HeaderBar component -->
     <HeaderBar />

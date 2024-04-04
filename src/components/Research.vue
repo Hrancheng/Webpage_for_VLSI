@@ -1,3 +1,4 @@
+<!-- This is Vue component for main part of Research page -->
 <template>
   <div class="project-container">
     <HeaderBar />

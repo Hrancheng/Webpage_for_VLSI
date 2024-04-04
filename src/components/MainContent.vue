@@ -1,3 +1,4 @@
+<!-- This is Vue component for main part of Home page-->
 <template>
   <div class="container">
     <h2>Welcome to Mehdi's VLSI Research Group</h2>
@@ -5,7 +6,7 @@
       <img src="/assets/Saligane.png" alt="Mehdi" class="profile-image">
       <div class="profile-info">
         <div class="biography">
-          
+          <!-- Modify text below to modify introduction part at the right of the image -->
           <p>Mehdi Saligane is a Research Scientist and Lecturer at the University of Michigan. He is also the Co-founder and CTO of Alea Biosciences.
           His current research interests include low-power and energy-efficient IC design, open-source EDA, and analog and mixed-signal IC design automation. He is the recipient of the Google Cloud Research Innovators Award and the Google Research Faculty Award in 2023 and 2021, respectively.
           Dr. Saligane currently serves as chair of the Analog Working Group, as a member of the Technical Steering Committee at CHIPS Alliance, and as a technical member of SSCS’ open source ecosystem. He is also the co-founder and organizer of the SSCS Code-a-Chip Notebook Competition at ISSCC and the SSCS Chipathon Design Contest.</p>
@@ -16,12 +17,14 @@
       <div class="open-source">
         <h4>Open Source Contributions</h4>
         <ul>
+          <!-- Modify text below to modify open source contributions part below the image -->
           <li>Dr. Saligane is a Founding member of the OpenROAD Project, an open-source digital flow.</li>
           <li>Dr. Saligane is now leading the OpenFASoC Project: Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits.</li>
         </ul>
       </div>
       <div class="contact-info">
         <h4>Contact Information</h4>
+        <!-- Modify text below to modify contact information part below the image -->
         <p>Assistant Research Scientist, Intermittent Lecturer<br>
           @ ECE, University of Michigan, Ann Arbor</p>
         <p>Email: <a href="mailto:mehdi@umich.edu">mehdi@umich.edu</a><br>
@@ -32,6 +35,8 @@
   </div>
   <div class="highlighted-research-container">
   <h3>Highlighted Research</h3>
+  <!-- Modify text below to modify text in highlighted research part -->
+  <!-- Modify the link to image below to modify images in highlighted research part -->
   <div class="research-content">
   <img src="/assets/OpenFASoc.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">

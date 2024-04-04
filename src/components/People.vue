@@ -1,3 +1,4 @@
+<!-- This is Vue component for people page -->
 <template>
   <div class="people-section">
     <HeaderBar />

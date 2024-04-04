@@ -1,3 +1,4 @@
+<!-- This is Vue component for main part of News page. -->
 <<template>
 <HeaderBar />
   <div class="news-container">

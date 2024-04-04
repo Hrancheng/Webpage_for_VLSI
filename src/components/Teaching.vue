@@ -1,3 +1,4 @@
+<!-- This is Vue component for main part of Teaching page -->
 <template>
 <HeaderBar />
   <div class="teaching-container">

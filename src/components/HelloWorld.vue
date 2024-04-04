@@ -1,3 +1,4 @@
+<!--this is for Vue framework loading-->
 <template>
   <v-container class="fill-height">
     <v-responsive class="align-center text-center fill-height">
