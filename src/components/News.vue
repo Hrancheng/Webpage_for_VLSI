@@ -10,8 +10,8 @@
       </p>
     </div>
     <div class="workshop-homepage"  v-if="currentArticle.title !== 'Coming Soon'">
-      Workshop Homepage: <a :href="currentArticle.homepageLinkEnglish" class="link">English</a> | 
-      <a :href="currentArticle.homepageLinkJapanese" class="link">日本語</a>
+      Workshop Homepage: <a :href="currentArticle.homepageLinkEnglish" class="link" target="_blank" rel="noopener noreferrer">English</a> | 
+      <a :href="currentArticle.homepageLinkJapanese" class="link" target="_blank" rel="noopener noreferrer">日本語</a>
     </div>
     <div class="button-container">
       <button @click="goToPrevious" :disabled="currentArticleIndex === 0">Previous</button>
