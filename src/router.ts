@@ -9,6 +9,7 @@ import Publication from '@/components/Publication.vue';
 import Research from '@/components/Research.vue';
 import Teaching from '@/components/Teaching.vue';
 import About from '@/components/About.vue';
+import Blog from '@/components/Blog';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', name: 'Home', component: Homepage, alias: '/home'},
@@ -18,6 +19,7 @@ const routes: Array<RouteRecordRaw> = [
   { path: '/publication', name: 'publication', component: Publication},
   { path: '/research', name: 'research', component: Research},
   { path: '/teaching', name: 'teaching', component: Teaching},
+  { path: '/blog', name: 'blog', component: Blog},
   // ... other routes
 ];
 

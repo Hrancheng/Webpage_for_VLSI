@@ -10,6 +10,7 @@
         <li><router-link to="/research">Research</router-link></li>
         <li><router-link to="/publication">Publication</router-link></li>
         <li><router-link to="/teaching">Teaching</router-link></li>
+        <li><router-link to="/blog">Blog</router-link></li>
         <!-- ...other navigation items -->
       </ul>
     </nav>

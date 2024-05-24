@@ -10,8 +10,10 @@
       </p>
     </div>
     <div class="workshop-homepage"  v-if="currentArticle.title !== 'Coming Soon'">
-      Workshop Homepage: <a :href="currentArticle.homepageLinkEnglish" class="link" target="_blank" rel="noopener noreferrer">English</a> | 
+      Workshop Homepage: <a :href="currentArticle.homepageLinkEnglish" class="link" target="_blank" rel="noopener noreferrer">English</a>
+      <span v-if="currentArticle.homepageLinkJapanese"> | 
       <a :href="currentArticle.homepageLinkJapanese" class="link" target="_blank" rel="noopener noreferrer">日本語</a>
+  </span>
     </div>
     <div class="button-container">
       <button @click="goToPrevious" :disabled="currentArticleIndex === 0">Previous</button>
@@ -34,6 +36,14 @@ export default {
           content: "The semiconductor industry faces many challenges related to supply chain shortages and over reliance on a small number of chip fabrication facilities. To enhance global economic security and prosperity, the American and Japanese governments are collaborating on a workforce training program with a specific focus on the semiconductor industry.<br><br> The first phase of this project is a 2-day online workshop , held December 5-6, 2023 (8-11:30am JST, 6-9:30pm EST), featuring experts in the field of integrated circuit design from both academia and industry.",
           homepageLinkEnglish: "https://sites.google.com/cpc-lab.org/ic-design-ws-e",
           homepageLinkJapanese: "https://sites.google.com/cpc-lab.org/ic-design-ws-j"
+        },
+        {
+          title: "CMOS Sky130 Primitives measured at cryogenic temperatures",
+          author: "Akin Akturk, Anhang Li, Mehdi Saligane, Joseph Riem, Gina Adam, Brian D Hoskins, Pragya Shrestha ",
+          date: "2024-03-27",
+          content: "Sky130 is an open source complimentary metal oxide semiconductor (CMOS) technology manufactured by Skywater Technology in its facility in Bloomington, Minnesota. Since it is an open source technology, there are no legal restrictions on it's characterization, unlike in typical foundry semiconductor technologies. To facilitate the development of cryogenic electronics, this data set includes measurements of devices manufactured in Sky130 at low temperatures.",
+          homepageLinkEnglish: "https://data.nist.gov/od/id/mds2-2997",
+          homepageLinkJapanese: ""
         },
         {
           title: "Coming Soon",

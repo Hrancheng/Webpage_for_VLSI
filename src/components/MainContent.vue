@@ -18,8 +18,17 @@
         <h4>Open Source Contributions</h4>
         <ul>
           <!-- Modify text below to modify open source contributions part below the image -->
-          <li>Dr. Saligane is a Founding member of the OpenROAD Project, an open-source digital flow.</li>
-          <li>Dr. Saligane is now leading the OpenFASoC Project: Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits.</li>
+          <li>Dr. Saligane is a Founding member of the  
+            <a href="https://github.com/The-OpenROAD-Project" target="_blank">OpenROAD Project</a>, 
+            an open-source digital flow.</li>
+          <li>Dr. Saligane is now leading the 
+            <a href="https://github.com/idea-fasoc/OpenFASOC" target="_blank">OpenFASOC Project</a>
+            : Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits.</li>
+         <li>
+          Dr. Saligane is leading the 
+          <a href="https://github.com/ReaLLMASIC" target="_blank">ReaLLMASIC project</a>, 
+          an innovative hardware-software co-design initiative.
+        </li>
         </ul>
       </div>
       <div class="contact-info">
@@ -83,6 +92,10 @@
 
 </div>
 <p class="instr_to_research"> A full list of projects please visit the <router-link to="/research">Research</router-link> page.</p>
+<div class="funding-collaborations">
+          <h4>Funding & Collaborations</h4>
+          <p>Our research is supported by collaboration with and funding from notable institutions and industry leaders. We are proud to partner with Google Research, Fitbit, National Institute of Standards and Technology (NIST), KLA, and the U.S. Consulate in Japan. We also receive silicon donations from GlobalFoundries and Intel.</p>
+        </div>
 </template>
 
 <script>
@@ -248,5 +261,12 @@ ul {
   margin-left:20px;
 }
 
+.funding-collaborations {
+  padding: 20px; /* Adds padding of 20px on all sides */
+  margin-top: 20px; /* Adds space above the section */
+  border-radius: 5px; /* Rounds the corners of the section */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-size: 0.95em; /* Slightly smaller font size for aesthetic */
+}
 
 </style>
