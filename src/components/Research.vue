@@ -81,6 +81,14 @@
       </ul>
     </div>
 
+        <h1 class="main-title">Efficient & Secure Digital Computation</h1>
+    <div class="project-section">
+      <img src="/assets/Efficient.png" alt="Efficient Image" class="project-photo" />
+      <ul class="project-description">
+        <li>LLM Inference Accelerator SoC with Advanced Power management.</li>
+      </ul>
+    </div>
+
     <div class="footer">
     </div>
   </div>

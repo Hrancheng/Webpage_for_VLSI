@@ -46,7 +46,9 @@
   <h3>Highlighted Research</h3>
   <!-- Modify text below to modify text in highlighted research part -->
   <!-- Modify the link to image below to modify images in highlighted research part -->
+      <h4><i>Analog and Custom Circuits Automation</i></h4>
   <div class="research-content">
+
   <img src="/assets/OpenFASoc.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
     <li>GLayout is a Cloud-Based Automatic Analog Layout & Netlist Generator with a Reinforcement-Learning Optimizer.</li>
@@ -54,7 +56,9 @@
     <li>Taped-out in SKY130 – Nov 2023</li>
   </ul>
 </div>
+   <h4><i>Nanofabrication and Metrology Systems</i></h4>
   <div class="research-content">
+ 
   <img src="/assets/nanoTech.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
     <li>NIST Nanofab accelerator is an initiative aimed at creating an open-source active substrate for novel nano device fabrication and characterization.</li>
@@ -62,7 +66,9 @@
       <li>Taped-out in SKY130 - Nov 2023</li>
   </ul>
 </div>
+    <h4><i>Cryogenic Design</i></h4>
   <div class="research-content">
+        
   <img src="/assets/Memristor.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
     <li>This project focuses on creating a memory array using phase-change devices like memristors.</li>
@@ -70,6 +76,7 @@
   </ul>
 </div>
   <div class="research-content">
+
   <img src="/assets/FinFET.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
      <li>This is an array of test devices and signal generators in Intel 16nm FinFET process.</li>
@@ -77,13 +84,16 @@
   </ul>
 </div>
   <div class="research-content">
+
   <img src="/assets/Cryogenic.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
     <li>This is an automatically generated switched-capacitor DCDC that maintains its characteristic across a very wide temperature range.</li>
       <li>The chip is fabricated and tested from 400K to 23K - Feb 2023</li>
   </ul>
 </div>
+        <h4><i>Efficient & Secure Digital Computation</i></h4>
   <div class="research-content">
+
   <img src="/assets/Efficient.png" alt="Research Graph" class="research-graph">
   <ul class="research-points">
      <li>LLM Inference Accelerator SoC with Advanced Power management.</li>
