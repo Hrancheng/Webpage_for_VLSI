@@ -9,7 +9,7 @@ import Publication from '@/components/Publication.vue';
 import Research from '@/components/Research.vue';
 import Teaching from '@/components/Teaching.vue';
 import About from '@/components/About.vue';
-import Blog from '@/components/Blog';
+import Blog from '@/components/Blog.vue';
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', name: 'Home', component: Homepage, alias: '/home'},
