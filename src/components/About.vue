@@ -9,9 +9,8 @@
       <div class="profile-info">
         <div class="biography">
           
-          <p>Mehdi Saligane is a Research Scientist and Lecturer at the University of Michigan. He is also the Co-founder and CTO of Alea Biosciences.
-          His current research interests include low-power and energy-efficient IC design, open-source EDA, and analog and mixed-signal IC design automation. He is the recipient of the Google Cloud Research Innovators Award and the Google Research Faculty Award in 2023 and 2021, respectively.
-          Dr. Saligane currently serves as chair of the Analog Working Group, as a member of the Technical Steering Committee at CHIPS Alliance, and as a technical member of SSCS’ open source ecosystem. He is also the co-founder and organizer of the SSCS Code-a-Chip Notebook Competition at ISSCC and the SSCS Chipathon Design Contest.</p>
+          <p>Welcome to my lab. My research focuses on low-power and energy-efficient IC design, applying Large Language Models in analog layout generation, Biosensors for DNA synthesis and sequencing,  Integrated laser-induced graphene Sensors, open-source EDA, and analog and mixed-signal IC design automation.
+            If you are interested in this type of research, please email me a resume and give me an idea of potential topics you may like to work on (mehdi@umich.edu, mehdi_saligane@brown.edu)</p>
         </div>
       </div>
     </div>
