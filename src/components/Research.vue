@@ -1,140 +1,153 @@
 <template>
-  <div class="project-container">
+  <div class="research-page">
     <HeaderBar />
+    <div class="spacer"></div>
+    <div class="content-wrapper">
+      <h1>Research and Publications</h1>
+      
+      <!-- Section: OpenFASoC -->
+      <div class="section">
+        <h2>OpenFASoC</h2>
+        <ul>
+          <li>
+            Hammoud, A., Goyal, C., Pathen, S., Dai, A., Li, A., Kielian, G., & Saligane, M. (2024, September).
+            <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">
+              Human Language to Analog Layout Using GLayout Layout Automation Framework
+            </a>.
+          </li>
+          <li>
+            Goyal, C., Khandeparkar, H., Charan, S., Baquero, J. S., Li, A., Euphrosine, J., & Saligane, M. (2024, March).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10511336" target="_blank">
+              Disrupting Conventional Chip Design through the Open Source EDA Ecosystem
+            </a>.
+          </li>
+          <li>
+            Hammoud, A., Shankar, V., Mains, R., Ansell, T., Matres, J., & Saligane, M. (2023, May).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10153547" target="_blank">
+              Openfasoc: An open platform towards analog and mixed-signal automation and acceleration of chip design
+            </a>.
+          </li>
+          <li>
+            Cherivirala, Y. K., Saligane, M., & Wentzloff, D. D. (2023, May).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10181884" target="_blank">
+              An open source compatible framework to fully autonomous digital LDO generation
+            </a>.
+          </li>
+        </ul>
+      </div>
 
-    <h1 class="main-title">Nanofabrication and Metrology Systems</h1>
-    <div class="project-section">
-      <img src="/assets/nanoTech.png" alt="Nano Technology Image" class="project-photo" />
-      <ul class="project-description">
-        <li>NIST Nanofab accelerator is an initiative aimed at creating an open-source active substrate for novel nano device fabrication and characterization.</li>
-        <li>We submitted a large number of useful active elements ranging from signal generators, CV test structures, PLL, OPAMPs, and more.</li>
-        <li>Taped-out in SKY130 - Nov 2023</li>
-      </ul>
-    </div>
+      <!-- Section: Cryogenic / Nano Device Technology -->
+      <div class="section">
+        <h2>Cryogenic / Nano Device Technology</h2>
+        <ul>
+          <li>
+            Li, A., Zeng, T., Zhang, L., Riem, J., Adam, G. C., Fleischer, D. L., & Saligane, M. (2024).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">
+              Unlocking Circuits for Quantum With Open Source Silicon
+            </a>.
+          </li>
+          <li>
+            Akturk, A., Tripathi, A., & Saligane, M. (2023, October).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10310944" target="_blank">
+              Cryogenic Modeling for Open-Source Process Design Kit Technology
+            </a>.
+          </li>
+        </ul>
+      </div>
 
-    <h1 class="main-title">Fully Integrated Flexible Sensors</h1>
-    <div class="project-section">
-      <img src="/assets/Miniature.png" alt="Miniature Image" class="project-photo" />
-      <ul class="project-description">
-        <li>This is a mixed signal sensor platform fabricated in GF180 using open-source design tools - Sep 2023</li>
-      </ul>
-    </div>
+      <!-- Section: Energy Efficient Computing Systems and Hardware Security -->
+      <div class="section">
+        <h2>Energy Efficient Computing Systems and Hardware Security</h2>
+        <ul>
+          <li>
+            Tao, G., Chen, M. H., Kielian, G., Pan, B., Yick, K., Sylvester, D., & Saligane, M. (2024).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank">
+              Open Secura: First silicon results of an auditable and transparent hardware root-of-trust system using open electronic design automation in 16 nm
+            </a>.
+          </li>
+        </ul>
+      </div>
 
-    <h1 class="main-title">Hardware Security</h1>
-    <div class="project-section">
-      <img src="/assets/OpenTitan.png" alt="OpenTitan Image" class="project-photo" />
-      <ul class="project-description">
-        <li>OpenTitan Root-of-Trust SoC with Clock Noise Injection.</li>
-      </ul>
-    </div>
+      <!-- Section: Miniature High-Performance Integrated Sensing Platforms -->
+      <div class="section">
+        <h2>Miniature High-Performance Integrated Sensing Platforms</h2>
+        <ul>
+          <li>
+            Li, A., Wu, H., Fadila, A. A., Kye, C., Balijepalli, A., Euphrosine, J., & Saligane, M. (2024).
+            <a href="https://www.nist.gov/publications/fully-integrated-multifunctional-sensor-and-open-source-asic-flexible-wearables" target="_blank">
+              Fully integrated multifunctional sensor and open-source ASIC for flexible wearables
+            </a>.
+          </li>
+        </ul>
+      </div>
 
-    <h1 class="main-title">Bio Sensors, DNA Synthesis, RNA Synthesis, and Cell Engineering On-A-Chip</h1>
-    <div class="project-section">
-      <img src="/assets/Construction.png" alt="Active DNA Sequencing & Synthesis Array Image" class="project-photo" />
-      <ul class="project-description">
-        <li>Active DNA Sequencing & Synthesis Array.</li>
-      </ul>
-    </div>
-    <div class="project-section">
-      <img src="/assets/Construction.png" alt="Laser-Induced Graphene Sensor Platform Image" class="project-photo" />
-      <ul class="project-description">
-        <li>Laser-Induced Graphene Sensor Platform.</li>
-      </ul>
-    </div>
-
-    <h1 class="main-title">Analog and Custom Circuits Automation</h1>
-    <div class="project-section">
-      <img src="/assets/OpenFASoc.png" alt="OpenFASoC Image" class="project-photo" />
-      <ul class="project-description">
-        <li>GLayout is a Cloud-Based Automatic Analog Layout & Netlist Generator with a Reinforcement-Learning Optimizer.</li>
-        <li>We demonstrated this framework with automated generation, evaluation, and optimization of a wide range of room-temperature and cryogenic OPAMPs.</li>
-        <li>Taped-out in SKY130 – Nov 2023</li>
-      </ul>
-    </div>
-    <div class="project-section">
-      <img src="/assets/ADC.png" alt="ADC Image" class="project-photo" />
-      <ul class="project-description">
-        <li>This is a high performance, low power, small area, time-interleaved ADC capable of RF sampling in Intel 16nm process - Jul 2023</li>
-      </ul>
-    </div>
-
-    <h1 class="main-title">Cryogenic Design</h1>
-    <div class="project-section">
-      <img src="/assets/Memristor.png" alt="Memristor Image" class="project-photo" />
-      <ul class="project-description">
-        <li>This project focuses on creating a memory array using phase-change devices like memristors.</li>
-        <li>Taped-out in SKY130 - Nov 2023</li>
-      </ul>
-    </div>
-    <div class="project-section">
-      <img src="/assets/FinFET.png" alt="FinFET Image" class="project-photo" />
-      <ul class="project-description">
-        <li>This is an array of test devices and signal generators in Intel 16nm FinFET process.</li>
-        <li>The goal is to observe a quantum effect in FinFET transistors and pave the way for new circuit design techniques - Jul 2023</li>
-      </ul>
-    </div>
-    <div class="project-section">
-      <img src="/assets/Cryogenic.png" alt="Cryogenic DCDC Converters Image" class="project-photo" />
-      <ul class="project-description">
-        <li>This is an automatically generated switched-capacitor DCDC that maintains its characteristic across a very wide temperature range.</li>
-        <li>The chip is fabricated and tested from 400K to 23K - Feb 2023</li>
-      </ul>
-    </div>
-
-        <h1 class="main-title">Efficient & Secure Digital Computation</h1>
-    <div class="project-section">
-      <img src="/assets/Efficient.png" alt="Efficient Image" class="project-photo" />
-      <ul class="project-description">
-        <li>LLM Inference Accelerator SoC with Advanced Power management.</li>
-      </ul>
-    </div>
-
-    <div class="footer">
+      <!-- Section: Bio-Electrical / Electro-Chemical / Biometrics Research -->
+      <div class="section">
+        <h2>Bio-Electrical / Electro-Chemical / Biometrics Research</h2>
+        <ul>
+          <li>
+            Li, A., Wu, H., Lingamguntla, M., Fadila, A. A., Kye, C. H., Balijepalli, A., & Saligane, M. (2024).
+            <a href="https://ieeexplore.ieee.org/abstract/document/10584418" target="_blank">
+              Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon
+            </a>.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Project',
-}
+  name: "ResearchPage",
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-.main-title {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  padding: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+/* General styling */
+.spacer {
+  margin-top: 20px; /* Adds space after the HeaderBar */
 }
 
-.project-section {
-  display: flex;
-  align-items:center;
+.content-wrapper {
+  padding: 0 20px; /* Adds padding on the left and right */
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+p,
+ul {
+  font-size: 1em;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.project-photo {
- width: 17%;  /* Make the image smaller */
-  height: auto;
-  border-radius: 8px;
-  margin-left: 50px;  /* Add space to the left of the image */
-  margin-right: 70px;
-  margin-bottom: 20px;  /* Add space between images */
+ul {
+  margin-left: 20px;
 }
 
-.project-description {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
-  padding: 20px;
+ul li {
+  margin-bottom: 10px;
 }
 
-.footer {
-  font-size: 16px;
-  text-align:right;
-  margin-top: 20px;
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -1,5 +1,5 @@
 <!-- This is Vue component for main part of News page. -->
-<<template>
+<template>
 <HeaderBar />
   <div class="news-container">
     <h1 class="title">{{ currentArticle.title }}</h1>

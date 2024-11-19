@@ -1,16 +1,16 @@
 <template>
   <header class="header-bar">
-    <img src="@/assets/Mchip.png" alt="SLED Logo" class="logo" />
+    <div class="logo-text">Saligane's Lab</div>
     <nav class="navigation">
       <ul>
         <li><router-link to="/home">Home</router-link></li>
         <!--<li><router-link to="/about">About</router-link></li> -->
-        <li><router-link to="/news">News</router-link></li>
         <li><router-link to="/people">People</router-link></li>
         <li><router-link to="/research">Research</router-link></li>
-        <li><router-link to="/publication">Publication</router-link></li>
+        <li><router-link to="/prospective_student">Prospective Student</router-link></li>
+        <li><router-link to="/outreach">Outreach</router-link></li>
+        <li><router-link to="/news">News</router-link></li>
         <li><router-link to="/teaching">Teaching</router-link></li>
-        <li><router-link to="/blog">Blog</router-link></li>
         <!-- ...other navigation items -->
       </ul>
     </nav>
@@ -30,11 +30,16 @@ export default {
   justify-content: space-between;
   background-color: #FFF;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  width: 100px;
+.logo-text {
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-family: 'Georgia', serif; /* Stylish font */
+  font-weight: 700; /* Bold weight */
+  color: #2c3e50; /* Darker shade for elegance */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  letter-spacing: 1px; /* Add some spacing between letters */
 }
 
 .navigation ul {
@@ -48,5 +53,11 @@ export default {
   margin: 0 10px;
   text-decoration: none;
   color: #000;
+  font-weight: 500; /* Slightly bold links */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation li a:hover {
+  color: #007BFF; /* Change color on hover */
 }
 </style>

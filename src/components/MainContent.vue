@@ -3,109 +3,118 @@
   <div class="container">
     <h2>Welcome to Mehdi's VLSI Research Group</h2>
     <div class="profile-container">
-      <img src="/assets/Saligane.png" alt="Mehdi" class="profile-image">
       <div class="profile-info">
         <div class="biography">
           <!-- Modify text below to modify introduction part at the right of the image -->
-          <p>Mehdi Saligane is a Research Scientist and Lecturer at the University of Michigan. He is also the Co-founder and CTO of Alea Biosciences.
-          His current research interests include low-power and energy-efficient IC design, open-source EDA, and analog and mixed-signal IC design automation. He is the recipient of the Google Cloud Research Innovators Award and the Google Research Faculty Award in 2023 and 2021, respectively.
-          Dr. Saligane currently serves as chair of the Analog Working Group, as a member of the Technical Steering Committee at CHIPS Alliance, and as a technical member of SSCS’ open source ecosystem. He is also the co-founder and organizer of the SSCS Code-a-Chip Notebook Competition at ISSCC and the SSCS Chipathon Design Contest.</p>
+          <p>Welcome to my lab. My research focuses on low-power and energy-efficient IC design, applying Large Language Models in analog layout generation, Biosensors for DNA synthesis and sequencing,  Integrated laser-induced graphene Sensors, open-source EDA, and analog and mixed-signal IC design automation.
+            If you are interested in this type of research, please email me a resume and give me an idea of potential topics you may like to work on (mehdi@umich.edu, mehdi_saligane@brown.edu)</p>
         </div>
       </div>
     </div>
     <div class="contributions-contact-container">
-      <div class="open-source">
-        <h4>Open Source Contributions</h4>
-        <ul>
-          <!-- Modify text below to modify open source contributions part below the image -->
-          <li>Dr. Saligane is a Founding member of the  
-            <a href="https://github.com/The-OpenROAD-Project" target="_blank">OpenROAD Project</a>, 
-            an open-source digital flow.</li>
-          <li>Dr. Saligane is now leading the 
-            <a href="https://github.com/idea-fasoc/OpenFASOC" target="_blank">OpenFASOC Project</a>
-            : Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits.</li>
-         <li>
-          Dr. Saligane is leading the 
-          <a href="https://github.com/ReaLLMASIC" target="_blank">ReaLLMASIC project</a>, 
-          an innovative hardware-software co-design initiative.
-        </li>
-        </ul>
+  <div class="open-source">
+    <h4>Example of recent work</h4>
+    <ul>
+      <li>
+        <div class="work-item">
+          <img src="/assets/GLayout.png" alt="GLayout Framework Graph" class="work-image" />
+          <div class="work-text">
+            <p><strong>Human Language to Analog Layout Using GLayout</strong></p>
+            <p>
+              The GLayout framework uses a Large Language Model (LLM) to translate analog layout into an expressive, technology-independent, compact text representation called StrictSyntax, allowing the LLM to understand analog layout through fine-tuning and in-context learning. The open source GLayout and evaluation set provide a starting point for future development of LLM-based analog layout automation.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="work-item">
+          <img src="/assets/GPIO.png" alt="OpenFASOC Project Graph" class="work-image" />
+          <div class="work-text">
+            <p><strong>Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong></p>
+            <p>
+              Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="work-item">
+          <img src="/assets/of.png" alt="ReaLLMASIC Project Graph" class="work-image" />
+          <div class="work-text">
+            <p><strong>Laser-Induced Graphene Sensors With Open-Source Silicon</strong></p>
+            <p>
+              This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="work-item">
+          <img src="/assets/Mchip_new.png" alt="ReaLLMASIC Project Graph" class="work-image" />
+          <div class="work-text">
+            <p><strong>Circuits for Quantum With Open Source Silicon</strong></p>
+            <p>
+              Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="work-item">
+          <img src="/assets/sscs.png" alt="ReaLLMASIC Project Graph" class="work-image" />
+          <div class="work-text">
+            <p><strong>SSCS PICO Chronicles: News From the Open Source Community</strong></p>
+            <p>
+              The IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="contact-section">
+      <h4>Contact Information</h4>
+      <p>
+        Phone: (734) 615-3499<br />
+        Office: 2431 EECS, 1301 Beal Ave, Ann Arbor, MI 48109
+      </p>
+      <div class="networks">
+        <a href="mailto:mehdi@umich.edu" target="_blank">
+          <img src="/assets/email.jpeg" alt="Email Icon" />
+        </a>
+        <a href="https://scholar.google.com/citations?user=u1UAQ2QAAAAJ&hl=en" target="_blank">
+          <img src="/assets/gs.png" alt="Google Scholar Icon" />
+        </a>
+        <a href="https://github.com/msaligane" target="_blank">
+          <img src="/assets/github.png" alt="GitHub Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/mehdi-saligane/" target="_blank">
+          <img src="/assets/linkedin.png" alt="LinkedIn Icon" />
+        </a>
+        <a href="https://twitter.com/example" target="_blank">
+          <img src="/assets/twitter.png" alt="Twitter Icon" />
+        </a>
       </div>
-      <div class="contact-info">
-        <h4>Contact Information</h4>
-        <!-- Modify text below to modify contact information part below the image -->
-        <p>Assistant Research Scientist, Intermittent Lecturer<br>
-          @ ECE, University of Michigan, Ann Arbor</p>
-        <p>Email: <a href="mailto:mehdi@umich.edu">mehdi@umich.edu</a><br>
-          Phone: (734) 615-3499<br>
-          Office: 2431 EECS, 1301 Beal Ave, Ann Arbor, MI 48109</p>
-      </div>
+      <p>Feel free to tweet me or drop a line via email.</p>
     </div>
   </div>
-  <div class="highlighted-research-container">
-  <h3>Highlighted Research</h3>
-  <!-- Modify text below to modify text in highlighted research part -->
-  <!-- Modify the link to image below to modify images in highlighted research part -->
-      <h4><i>Analog and Custom Circuits Automation</i></h4>
-  <div class="research-content">
-
-  <img src="/assets/OpenFASoc.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-    <li>GLayout is a Cloud-Based Automatic Analog Layout & Netlist Generator with a Reinforcement-Learning Optimizer.</li>
-    <li>We demonstrated this framework with automated generation, evaluation, and optimization of a wide range of room-temperature and cryogenic OPAMPs.</li>
-    <li>Taped-out in SKY130 – Nov 2023</li>
-  </ul>
-</div>
-   <h4><i>Nanofabrication and Metrology Systems</i></h4>
-  <div class="research-content">
- 
-  <img src="/assets/nanoTech.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-    <li>NIST Nanofab accelerator is an initiative aimed at creating an open-source active substrate for novel nano device fabrication and characterization.</li>
-      <li>We submitted a large number of useful active elements ranging from signal generators, CV test structures, PLL, OPAMPs, and more.</li>
-      <li>Taped-out in SKY130 - Nov 2023</li>
-  </ul>
-</div>
-    <h4><i>Cryogenic Design</i></h4>
-  <div class="research-content">
-        
-  <img src="/assets/Memristor.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-    <li>This project focuses on creating a memory array using phase-change devices like memristors.</li>
-        <li>Taped-out in SKY130 - Nov 2023</li>
-  </ul>
-</div>
-  <div class="research-content">
-
-  <img src="/assets/FinFET.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-     <li>This is an array of test devices and signal generators in Intel 16nm FinFET process.</li>
-      <li>The goal is to observe a quantum effect in FinFET transistors and pave the way for new circuit design techniques - Jul 2023</li>
-  </ul>
-</div>
-  <div class="research-content">
-
-  <img src="/assets/Cryogenic.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-    <li>This is an automatically generated switched-capacitor DCDC that maintains its characteristic across a very wide temperature range.</li>
-      <li>The chip is fabricated and tested from 400K to 23K - Feb 2023</li>
-  </ul>
-</div>
-        <h4><i>Efficient & Secure Digital Computation</i></h4>
-  <div class="research-content">
-
-  <img src="/assets/Efficient.png" alt="Research Graph" class="research-graph">
-  <ul class="research-points">
-     <li>LLM Inference Accelerator SoC with Advanced Power management.</li>
-  </ul>
-</div>
-
-</div>
-<p class="instr_to_research"> A full list of projects please visit the <router-link to="/research">Research</router-link> page.</p>
-<div class="funding-collaborations">
-          <h4>Funding & Collaborations</h4>
-          <p>Our research is supported by collaboration with and funding from notable institutions and industry leaders. We are proud to partner with Google Research, Fitbit, National Institute of Standards and Technology (NIST), KLA, and the U.S. Consulate in Japan. We also receive silicon donations from GlobalFoundries and Intel.</p>
-        </div>
+  <div class="funding-collaborations">
+    <h4>Funding & Collaborations</h4>
+    <p>
+      Our research is supported by collaboration with and funding from notable institutions and industry leaders. We are proud to partner with Google Research, Fitbit, National Institute of Standards and Technology (NIST), KLA, and the U.S. Consulate in Japan. We also receive silicon donations from GlobalFoundries and Intel.
+    </p>
+    <div class="sponsor-logos">
+      <img src="/assets/NIST.png" alt="Google Research Logo" />
+      <img src="/assets/ONR.png" alt="Fitbit Logo" />
+      <img src="/assets/CA.png" alt="NIST Logo" />
+      <img src="/assets/OpenRoad.png" alt="KLA Logo" />
+      <img src="/assets/google.png" alt="U.S. Consulate in Japan Logo" />
+    </div>
+  </div>
+  
+  
 </template>
 
 <script>
@@ -179,9 +188,6 @@ h1 {
   padding: 0 20px; /* Add some padding for spacing */
 }
 
-.open-source {
-  padding-bottom: 50px; /* Indent list items */
-}
 
 a {
   color: #0000EE;
@@ -219,11 +225,44 @@ ul {
   align-items: flex-start;
   margin-top: 20px;
 }
-
-.open-source, .contact-info {
-  flex: 1 4 200px;
-  padding: 0 20px;
+.open-source ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
+
+.open-source li {
+  margin-bottom: 20px; /* Add space between list items */
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.work-item {
+  display: flex; /* Align image and text horizontally */
+  align-items: center; /* Center text vertically with the image */
+  gap: 15px; /* Add consistent spacing between image and text */
+}
+
+.work-image {
+  width: 300px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for images */
+}
+
+.work-text {
+  flex: 1; /* Allow the text to take up remaining space */
+  display: flex; /* Use flexbox for vertical alignment within the text container */
+  flex-direction: column; /* Ensure paragraphs are stacked */
+  justify-content: center; /* Center the text vertically */
+}
+
+.work-text p {
+  margin: 0 0 10px; /* Add some spacing below paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+
 .highlighted-research-container {
   margin-top: 40px;
   margin-left: 40px;
@@ -272,11 +311,53 @@ ul {
 }
 
 .funding-collaborations {
-  padding: 20px; /* Adds padding of 20px on all sides */
-  margin-top: 20px; /* Adds space above the section */
-  border-radius: 5px; /* Rounds the corners of the section */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  font-size: 0.95em; /* Slightly smaller font size for aesthetic */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.95em;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sponsor-logos img {
+  max-width: 150px;
+  max-height: 100px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+.networks img {
+  width: 40px; /* Set icon width */
+  height: 40px; /* Set icon height */
+  object-fit: contain; /* Ensure images are properly fitted */
+  border-radius: 50%; /* Circular icons */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for icons */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
+}
+
+.networks img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+.contact-section a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007BFF; /* Default link color */
+}
+
+.contact-section a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 </style>

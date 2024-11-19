@@ -2,23 +2,26 @@
 <template>
   <div class="people-section">
     <HeaderBar />
-    <h1 class="phd-students-heading">Visiting Scholars</h1>
-    <div class="student" v-for="student in VisitingScholars" :key="student.name">
-      <img :src="student.image" alt="Photo of student" class="student-photo" />
+    <div class="student">
+      <img src="/assets/Saligane.png" alt="Photo of Salingane" class="student-photo" />
       <div class="student-info">
-        <h2>{{ student.name }}</h2>
+        <h2>Mehdi Saligane</h2>
         <div class="social-links">
-          <a v-if="student.twitter" :href="`https://twitter.com/${student.twitter}`" target="_blank">
-            <img src='/assets/twitter.png'>
+          <a href="https://twitter.com/example" target="_blank">
+            <img src='/assets/twitter.png' alt="Twitter">
           </a>
-          <a v-if="student.email" :href="`mailto:${student.email}`">
-            <img src="/assets/email.jpeg" alt="Email"/>
+          <a href="mailto:example@example.com">
+            <img src="/assets/email.jpeg" alt="Email" />
           </a>
         </div>
-        <p>{{ student.description }}</p>
+        <p>Mehdi Saligane is a research scientist and lecturer at the University of Michigan, and will join Brown University in July 2025. He is also co-founder and CTO of Alea Biosciences.
+His current research interests include low-power and energy-efficient IC design, open-source EDA, and analog and mixed-signal IC design automation. He received the Google Cloud Research Innovators Award and the Google Research Faculty Award in 2023 and 2021, respectively.
+Dr. Saligane currently serves as the Chair of the Analog Working Group, a member of the CHIPS Alliance Technical Steering Committee, and a technical member of the SSCS open source ecosystem. He is also the co-founder and organizer of the SSCS Code-a-Chip Notebook Competition at ISSCC and the SSCS Chipathon Design Contest.
+        </p>
       </div>
     </div>
-    <h1 class="phd-students-heading">Ph.D. Students(Sorted by Time of Joining, Newest First)</h1>
+
+    <h1 class="phd-students-heading">Ph.D. Students</h1>
     <div class="student" v-for="student in phdStudents" :key="student.name">
       <img :src="student.image" alt="Photo of student" class="student-photo" />
       <div class="student-info">
@@ -50,6 +53,41 @@
         <p>{{ student.description }}</p>
       </div>
     </div>
+    <h1 class="phd-students-heading">Visiting Scholars</h1>
+    <div class="student" v-for="student in VisitingScholars" :key="student.name">
+      <img :src="student.image" alt="Photo of student" class="student-photo" />
+      <div class="student-info">
+        <h2>{{ student.name }}</h2>
+        <div class="social-links">
+          <a v-if="student.twitter" :href="`https://twitter.com/${student.twitter}`" target="_blank">
+            <img src='/assets/twitter.png'>
+          </a>
+          <a v-if="student.email" :href="`mailto:${student.email}`">
+            <img src="/assets/email.jpeg" alt="Email"/>
+          </a>
+        </div>
+        <p>{{ student.description }}</p>
+      </div>
+    </div>
+
+    <h1 class="phd-students-heading">Alumni</h1>
+    <div class="student" v-for="alumnus in alumni" :key="alumnus.name">
+      <img :src="alumnus.image" alt="Photo of alumnus" class="student-photo" />
+      <div class="student-info">
+        <h2>{{ alumnus.name }}</h2>
+        <div class="social-links">
+          <a v-if="alumnus.linkedin" :href="alumnus.linkedin" target="_blank">
+            <img src='/assets/twitter.png' alt="LinkedIn" />
+          </a>
+          <a v-if="alumnus.email" :href="`mailto:${alumnus.email}`">
+            <img src="/assets/email.jpeg" alt="Email" />
+          </a>
+        </div>
+        <p>{{ alumnus.description }}</p>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
@@ -77,14 +115,7 @@ export default {
           twitter: 'example',
           email:"example",
           image: '/assets/li.png', // Replace with the actual path
-          description: 'Anhang Li received his bachelor\'s degree in Microelectronics at Sun Yat-Sen University, Guangzhou, China, and subsequently the M.S. degree with honor in Electrical Engineering at Columbia University, NY. His research interests include RF/MMIC, power-efficient circuits, and computer-aided mixed-signal design.'
-        },
-        {
-          name: 'Ming-Hung Chen',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/chen.png', // Replace with the actual path
-          description: ''
+          description: 'Anhang Li received his bachelor\'s degree in Microelectronics at Sun Yat-Sen University, Guangzhou, China, and subsequently the M.S. degree in Electrical Engineering at Columbia University, NY in 2022. He is currently pursuing a Ph.D. degree in Electrical and Computer Engineering at the University of Michigan, Ann Arbor, MI, 48109. His research interests include computer-aided mixed-signal design, SoC, and RF/MMIC circuit design.'
         },
         // ...other students
       ],
@@ -98,7 +129,14 @@ export default {
         },
         // ...other students
       ],
-      Undergraduate_Master_students: [
+      alumni: [
+        {
+          name: 'Ming-Hung Chen',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/chen.png', // Replace with the actual path
+          description: ''
+        },
         {
           name: 'Nora Desmond',
           twitter: 'example',
@@ -135,12 +173,71 @@ export default {
           description: 'Yiheng recevied his bachelor’s degree in University of Electronic Science and Technology of China. His research interests include high speed, high precision data converters, and image sensor.'
         },
         {
+          name: 'Bowen Li',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/people.png', // Replace with the actual path
+          description: 'Bowen Li received his Master’s degree at University of Michigan and bachelor’s degree at Tamkang University. His research interests include Delay Locked Loop and MRAM.'
+        },
+        // More alumni data...
+      ],
+      Undergraduate_Master_students: [
+        {
           name: 'Ali Hammoud',
           twitter: 'example',
           email:"example",
           image: '/assets/Ali.png', // Replace with the actual path
-          description: ''
+          description: 'Ali Hammoud is a student at the University of Michigan studying computer engineering, based in Ann Arbor Michigan. He is currently doing research in Professor Mehdi Saligane’s group at Michigan. He is interested in exploring novel analog automation approaches—using reinforcement learning and large language models to automate analog layout and sizing—and codesign of hardware with AI architectures.'
         },
+        {
+          name: 'Arlene Dai',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/Arlene.jpg', // Replace with the actual path
+          description: 'Arlene is a third year student studying electrical engineering. She is currently conducting research in Dr Mehdi Saligane’s group exploring how LLMs can be used to generate analog layout.'
+        },
+        {
+          name: 'Junyi Luo',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/Luo.jpg', // Replace with the actual path
+          description: 'Junyi Luo is a MS student studying ECE in University of Michigan now. He is interested in VLSI, FPGA and AI. He received his B.E. degree from the School of Microelectronics, Southern University of Science and Technology，Shenzhen, China, in 2023.'
+        },
+        {
+          name: 'Landon Butcher',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/Butcher.jpg', // Replace with the actual path
+          description: 'Landon is a 3rd-year senior studying Computer Engineering. He has worked from the chip layout to PCB layout level. His research interests include secure computing, SDR and mixed-signal systems.'
+        },
+        {
+          name: 'Tianxiang Li',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/tianxiang.jpg', // Replace with the actual path
+          description: 'Tianxiang Li is a senior student majoring in Computer Engineering. He focused on analog layout automation through a prompt-based process using large language models (LLMs).'
+        },
+        {
+          name: 'Stoke Song',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/song.jpg', // Replace with the actual path
+          description: 'Situo(Stoke) Song is a master’s student in ECE department at University of Michigan, Ann Arbor. His research focuses on Digital/Analog circuit design and AI. Currently, he is working on Physical Unclonable Function(PUF). Holding a bachelor’s degree in EE from Huazhong University of Science and Technology, Situo Song brings a solid foundation in lithography, system verilog, Cadence and python programming.'
+        },
+        {
+          name: 'Sakib Pathen',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/Pathen.png', // Replace with the actual path
+          description: 'Sakib Pathen is a current student at the University of Michigan studying electrical engineering. He is currently working on automating layout for analog designs through machine learning. His research interests include mixed-signal design, hardware for machine learning, and open-source EDA.'
+        },
+        {
+          name: 'Yuhao Yuan',
+          twitter: 'example',
+          email:"example",
+          image: '/assets/people.png', // Replace with the actual path
+          description: 'Yuhao received his bachelor’s degree in Electrical Engineering at University of Illinois at Urbana Champaign, IL, 61801. He subsequently started pursuing an M.S. degree at University of Michigan, Ann Arbor, MI, 48109, with a concentration of applied electromagnetics and RF circuits. His research interests include RF/mmWave IC design. Yuhao is taking an internship at Peregrine Semiconductor, Arlington Heights, IL, 60004 starting Fall 2024.'
+        }
         // ...other students
       ]
     };
