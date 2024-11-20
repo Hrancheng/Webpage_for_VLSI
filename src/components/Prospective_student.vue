@@ -54,7 +54,7 @@
   
   /* Apply padding only to the content wrapper */
   .content-wrapper {
-    padding: 40px 20px; /* Add padding to the left and right */
+    padding: 40px 200px; /* Add padding to the left and right */
   }
   
   /* Header styling */

@@ -1,7 +1,6 @@
 <!-- This is Vue component for main part of Home page-->
 <template>
   <div class="container">
-    <h2>Welcome to Mehdi's VLSI Research Group</h2>
     <div class="profile-container">
       <div class="profile-info">
         <div class="biography">
@@ -12,66 +11,39 @@
       </div>
     </div>
     <div class="contributions-contact-container">
-  <div class="open-source">
-    <h4>Example of recent work</h4>
-    <ul>
-      <li>
-        <div class="work-item">
-          <img src="/assets/GLayout.png" alt="GLayout Framework Graph" class="work-image" />
-          <div class="work-text">
-            <p><strong>Human Language to Analog Layout Using GLayout</strong></p>
-            <p>
-              The GLayout framework uses a Large Language Model (LLM) to translate analog layout into an expressive, technology-independent, compact text representation called StrictSyntax, allowing the LLM to understand analog layout through fine-tuning and in-context learning. The open source GLayout and evaluation set provide a starting point for future development of LLM-based analog layout automation.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="work-item">
-          <img src="/assets/GPIO.png" alt="OpenFASOC Project Graph" class="work-image" />
-          <div class="work-text">
-            <p><strong>Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong></p>
-            <p>
-              Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="work-item">
-          <img src="/assets/of.png" alt="ReaLLMASIC Project Graph" class="work-image" />
-          <div class="work-text">
-            <p><strong>Laser-Induced Graphene Sensors With Open-Source Silicon</strong></p>
-            <p>
-              This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="work-item">
-          <img src="/assets/Mchip_new.png" alt="ReaLLMASIC Project Graph" class="work-image" />
-          <div class="work-text">
-            <p><strong>Circuits for Quantum With Open Source Silicon</strong></p>
-            <p>
-              Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="work-item">
-          <img src="/assets/sscs.png" alt="ReaLLMASIC Project Graph" class="work-image" />
-          <div class="work-text">
-            <p><strong>SSCS PICO Chronicles: News From the Open Source Community</strong></p>
-            <p>
-              The IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+
+      <div class="news-section">
+  <h4>News & Publications</h4>
+  <ul>
+    <li>
+      <strong>(11/2024 published in MSSC) SSCS PICO Chronicles:</strong> News From the Open Source Community. The IEEE Solid-State Circuits Magazine Fall 2024 issue reports on several key developments in the open-source chip design community. The Chipathon 2023 concluded successfully with three teams from different countries taping out chips using open source IC design tools and PDK in GlobalFoundries GF180MCU technology. Also, the 2024 edition of Chipathon has launched with a focus on analog layout automation using GLayout, attracting over 753 participants from various backgrounds including academia, industry, and hobbyists. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(09/2024 published in MLCAD) Human Language to Analog Layout Using GLayout:</strong> Published in MLCAD 2024. The GLayout framework uses a Large Language Model (LLM) to translate analog layout into an expressive, technology-independent, compact text representation called StrictSyntax, allowing the LLM to understand analog layout through fine-tuning and in-context learning. The open source GLayout and evaluation set provide a starting point for future development of LLM-based analog layout automation.
+      <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024 published in MSSC) Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong> Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024 published in MSSC) Laser-Induced Graphene Sensors With Open-Source Silicon:</strong> Published in MSSC 2024, This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
+      <a href="https://ieeexplore.ieee.org/document/10584418" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024 published in MSSC) Circuits for Quantum With Open Source Silicon:</strong> Published in MSSC 2024. Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(11/2023 published in MSSC) SSCS PICO Chronicles:</strong> News From the Open Source Community. Published in MSSC 2023, the IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+  </ul>
+</div>
+
+
+ 
 </div>
 
 <div class="contact-section">
@@ -93,11 +65,7 @@
         <a href="https://www.linkedin.com/in/mehdi-saligane/" target="_blank">
           <img src="/assets/linkedin.png" alt="LinkedIn Icon" />
         </a>
-        <a href="https://twitter.com/example" target="_blank">
-          <img src="/assets/twitter.png" alt="Twitter Icon" />
-        </a>
       </div>
-      <p>Feel free to tweet me or drop a line via email.</p>
     </div>
   </div>
   <div class="funding-collaborations">
@@ -129,7 +97,7 @@ export default {
   box-sizing: border-box;
 }
 .container {
-  margin: 0 auto;
+  margin: 20px auto;
   padding-left: 20px;
   text-align: left; /* Align text to the left */
 }
@@ -178,7 +146,7 @@ h1 {
 
 .biography {
   flex: 1; /* Each child takes equal width */
-  padding-right: 20px; /* Add some padding for spacing */
+  padding-right: 50px; /* Add some padding for spacing */
   padding-top: 50px;
 
 }
@@ -233,7 +201,6 @@ ul {
 
 .open-source li {
   margin-bottom: 20px; /* Add space between list items */
-  margin-left: 20px;
   margin-right: 50px;
 }
 
@@ -311,9 +278,9 @@ ul {
 }
 
 .funding-collaborations {
-  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 0.95em;
 }
 
@@ -323,6 +290,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
+  margin-right: 120px;
 }
 
 .sponsor-logos img {
@@ -331,9 +299,6 @@ ul {
   margin: 10px;
   object-fit: contain;
 }
-
-
-
 
 
 
@@ -358,6 +323,41 @@ ul {
 
 .contact-section a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+
+
+.news-section {
+  margin-top: 40px;
+  margin-right: 40px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.news-section h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.news-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-section li {
+  margin-bottom: 10px;
+  margin-left: 3px;
+  margin-right: 40px;
+  line-height: 1.6;
+}
+
+.news-section a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.news-section a:hover {
+  text-decoration: underline;
 }
 
 </style>

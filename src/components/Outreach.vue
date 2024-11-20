@@ -34,11 +34,15 @@
         </div>
         <div class="section">
           <h2>Japan Collaboration</h2>
+          <img src="/assets/japan.png" alt="Chipathon and Code-a-Chip" class="section-image" />
           <p>
             Dr. Mehdi is currently leading an effort in collaboration with the Kyushu Region and
             Universities, which is supported by the U.S. Consulate in Japan, to train a high-tech labor
             workforce. This initiative builds upon the work developed in this project and aims to enhance
             IC design skills globally.
+          </p>
+          <p>
+            The semiconductor industry faces many challenges related to supply chain shortages and over reliance on a small number of chip fabrication facilities. To enhance global economic security and prosperity, the American and Japanese governments are collaborating on a workforce training program with a specific focus on the semiconductor industry.
           </p>
           <p>
             <a href="https://sites.google.com/cpc-lab.org/ic-design-ws-e" target="_blank">More details on the IC Design Workshop</a>

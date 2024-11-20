@@ -9,8 +9,8 @@
         <li><router-link to="/research">Research</router-link></li>
         <li><router-link to="/prospective_student">Prospective Student</router-link></li>
         <li><router-link to="/outreach">Outreach</router-link></li>
-        <li><router-link to="/news">News</router-link></li>
-        <li><router-link to="/teaching">Teaching</router-link></li>
+        <!-- <li><li><router-link to="/news">News</router-link></li> -->
+       <!-- <li><router-link to="/teaching">Teaching</router-link></li> -->
         <!-- ...other navigation items -->
       </ul>
     </nav>
