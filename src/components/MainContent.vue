@@ -16,7 +16,7 @@
   <h4>News & Publications</h4>
   <ul>
     <li>
-      <strong>(11/2024 published in MSSC) SSCS PICO Chronicles:</strong> News From the Open Source Community. The IEEE Solid-State Circuits Magazine Fall 2024 issue reports on several key developments in the open-source chip design community. The Chipathon 2023 concluded successfully with three teams from different countries taping out chips using open source IC design tools and PDK in GlobalFoundries GF180MCU technology. Also, the 2024 edition of Chipathon has launched with a focus on analog layout automation using GLayout, attracting over 753 participants from various backgrounds including academia, industry, and hobbyists. 
+      <strong>(11/2024 published in SSC-M) SSC-M PICO Chronicles:</strong> News From the Open Source Community. The IEEE Solid-State Circuits Magazine Fall 2024 issue reports on several key developments in the open-source chip design community. The Chipathon 2023 concluded successfully with three teams from different countries taping out chips using open source IC design tools and PDK in GlobalFoundries GF180MCU technology. Also, the 2024 edition of Chipathon has launched with a focus on analog layout automation using GLayout, attracting over 753 participants from various backgrounds including academia, industry, and hobbyists. 
       <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
     </li>
     <li>
@@ -24,19 +24,19 @@
       <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in MSSC) Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong> Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
+      <strong>(07/2024 published in SSC-M) Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong> Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
       <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in MSSC) Laser-Induced Graphene Sensors With Open-Source Silicon:</strong> Published in MSSC 2024, This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
+      <strong>(07/2024 published in SSC-M) Laser-Induced Graphene Sensors With Open-Source Silicon:</strong> Published in SSC-M 2024, This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
       <a href="https://ieeexplore.ieee.org/document/10584418" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in MSSC) Circuits for Quantum With Open Source Silicon:</strong> Published in MSSC 2024. Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
+      <strong>(07/2024 published in SSC-M) Circuits for Quantum With Open Source Silicon:</strong> Published in SSC-M 2024. Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
       <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(11/2023 published in MSSC) SSCS PICO Chronicles:</strong> News From the Open Source Community. Published in MSSC 2023, the IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
+      <strong>(11/2023 published in SSC-M) SSC-M PICO Chronicles:</strong> News From the Open Source Community. Published in SSC-M 2023, the IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
       <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
     </li>
   </ul>
@@ -45,6 +45,20 @@
 
  
 </div>
+
+<div class="animation-section">
+      <transition name="fade" mode="out-in">
+        <img
+          :src="images[currentImageIndex]"
+          :key="images[currentImageIndex]"
+          class="animated-image"
+          alt="Research Image"
+        />
+      </transition>
+    </div>
+
+
+
 
 <div class="contact-section">
       <h4>Contact Information</h4>
@@ -87,8 +101,36 @@
 
 <script>
 export default {
-  name: 'HomePageContent',
-}
+  name: "HomePageContent",
+  data() {
+    return {
+      images: [
+        "/assets/animation/1.jpg",
+        "/assets/animation/2.png",
+        "/assets/animation/3.png",
+        "/assets/animation/4.jpg",
+        "/assets/animation/5.jpg",
+        "/assets/animation/6.png",
+        "/assets/animation/7.jpg",
+        "/assets/animation/8.jpg",
+        "/assets/animation/9.png",
+        "/assets/animation/10.png",
+      ],
+      currentImageIndex: 0,
+    };
+  },
+  mounted() {
+    this.startImageCycle();
+  },
+  methods: {
+    startImageCycle() {
+      setInterval(() => {
+        this.currentImageIndex =
+          (this.currentImageIndex + 1) % this.images.length;
+      }, 3000); // Change image every 3 seconds
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -182,6 +224,8 @@ ul {
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .profile-info {
@@ -278,8 +322,8 @@ ul {
 }
 
 .funding-collaborations {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 100px;
+  margin-left: 80px;
   border-radius: 5px;
   font-size: 0.95em;
 }
@@ -316,6 +360,11 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
 }
 
+.contact-section {
+  margin-right: 100px;
+  margin-left: 60px;
+}
+
 .contact-section a {
   text-decoration: none; /* Remove underline from links */
   color: #007BFF; /* Default link color */
@@ -328,7 +377,8 @@ ul {
 
 .news-section {
   margin-top: 40px;
-  margin-right: 40px;
+  margin-right: 100px;
+  margin-left: 60px;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
@@ -358,6 +408,42 @@ ul {
 
 .news-section a:hover {
   text-decoration: underline;
+}
+
+/* Animation Section Styling */
+.animation-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 40px auto; /* Add vertical margin and center horizontally */
+  width: 60%; /* Fixed width for the image container */
+  height: 400px; /* Fixed height for the image container */
+  position: relative; /* Positioning for absolute images */
+  border-radius: 10px; /* Rounded corners for the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section */
+  overflow: hidden; /* Ensure images don't overflow the container */
+  background-color: #f9f9f9; /* Optional: Add a background color to fill gaps */
+}
+
+.animated-image {
+  width: 100%; /* Force the image to scale to the container width */
+  height: 100%; /* Force the image to scale to the container height */
+  object-fit: cover; /* Crop the image to fill the container while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+  border-radius: 10px; /* Keep the rounded corners for the image */
+  transition: opacity 1s ease-in-out;
+}
+
+
+/* Fade Animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 3s;
+}
+
+.fade-enter, 
+.fade-leave-to {
+  opacity: 0;
 }
 
 </style>

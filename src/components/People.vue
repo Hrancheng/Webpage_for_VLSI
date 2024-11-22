@@ -8,7 +8,7 @@
         <h2>Mehdi Saligane</h2>
         <div class="social-links">
           <a href="https://twitter.com/example" target="_blank">
-            <img src='/assets/twitter.png' alt="Twitter">
+            <img src='/assets/linkedin.png' alt="Twitter">
           </a>
           <a href="mailto:example@example.com">
             <img src="/assets/email.jpeg" alt="Email" />
@@ -28,7 +28,7 @@ Dr. Saligane currently serves as the Chair of the Analog Working Group, a member
         <h2>{{ student.name }}</h2>
         <div class="social-links">
           <a v-if="student.twitter" :href="`https://twitter.com/${student.twitter}`" target="_blank">
-            <img src='/assets/twitter.png'>
+            <img src='/assets/linkedin.png'>
           </a>
           <a v-if="student.email" :href="`mailto:${student.email}`">
             <img src="/assets/email.jpeg" alt="Email"/>
@@ -44,7 +44,7 @@ Dr. Saligane currently serves as the Chair of the Analog Working Group, a member
         <h2>{{ student.name }}</h2>
         <div class="social-links">
           <a v-if="student.twitter" :href="`https://twitter.com/${student.twitter}`" target="_blank">
-            <img src='/assets/twitter.png'>
+            <img src='/assets/linkedin.png'>
           </a>
           <a v-if="student.email" :href="`mailto:${student.email}`">
             <img src="/assets/email.jpeg" alt="Email"/>
@@ -60,7 +60,7 @@ Dr. Saligane currently serves as the Chair of the Analog Working Group, a member
         <h2>{{ student.name }}</h2>
         <div class="social-links">
           <a v-if="student.twitter" :href="`https://twitter.com/${student.twitter}`" target="_blank">
-            <img src='/assets/twitter.png'>
+            <img src='/assets/linkedin.png'>
           </a>
           <a v-if="student.email" :href="`mailto:${student.email}`">
             <img src="/assets/email.jpeg" alt="Email"/>
@@ -77,7 +77,7 @@ Dr. Saligane currently serves as the Chair of the Analog Working Group, a member
         <h2>{{ alumnus.name }}</h2>
         <div class="social-links">
           <a v-if="alumnus.linkedin" :href="alumnus.linkedin" target="_blank">
-            <img src='/assets/twitter.png' alt="LinkedIn" />
+            <img src='/assets/linkedin.png' alt="LinkedIn" />
           </a>
           <a v-if="alumnus.email" :href="`mailto:${alumnus.email}`">
             <img src="/assets/email.jpeg" alt="Email" />

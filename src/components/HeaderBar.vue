@@ -1,6 +1,6 @@
 <template>
   <header class="header-bar">
-    <div class="logo-text">Saligane's Lab</div>
+    <div class="logo-text">Mehdi's Lab</div>
     <nav class="navigation">
       <ul>
         <li><router-link to="/home">Home</router-link></li>
