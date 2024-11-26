@@ -60,4 +60,31 @@ export default {
 .navigation li a:hover {
   color: #007BFF; /* Change color on hover */
 }
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1rem; /* Maintain consistent padding */
+  }
+
+  .logo-text {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    margin-bottom: 1rem; /* Add spacing below the logo */
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    width: 100%; /* Take full width of the screen */
+  }
+
+  .navigation li {
+    margin: 0.5rem 0; /* Add spacing between items */
+  }
+
+  .navigation li a {
+    font-size: 1.2rem; /* Increase link font size for better readability */
+    color: #000; /* Ensure color consistency */
+  }
+}
 </style>
