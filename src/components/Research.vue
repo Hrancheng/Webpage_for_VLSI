@@ -1,12 +1,20 @@
 <template>
   <div class="research-page">
     <HeaderBar />
+    <nav class="scroll-menu">
+      <ul>
+        <li><a href="#openfasoc">OpenFASoC</a></li>
+        <li><a href="#cryogenic">Cryogenic / Nano Device Technology</a></li>
+        <li><a href="#energy-efficient">Energy Efficient Computing Systems</a></li>
+        <li><a href="#bio-electrical">Bio-Electrical / Biometrics Research</a></li>
+        <li><a href="#academic-publications">Academic Publications</a></li>
+      </ul>
+    </nav>
     <div class="spacer"></div>
     <div class="content-wrapper">
-      <h1>Research and Publications</h1>
 
       <!-- Section: OpenFASoC -->
-      <div class="section">
+      <div id="openfasoc" class="section" style="margin-top: 40px;">
         <h2>OpenFASoC: An Open Source Framework for Fully Automated Mixed-Signal SoC Generation (IC Design Automation)</h2>
         <div class="section-content">
           <div class="two-column-layout">
@@ -19,33 +27,33 @@
             <div class="publications-container">
               <ul>
                 <li>
-                Human Language to Analog Layout Using GLayout Layout Automation Framework. 
-                <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank"><strong>MLCAD’24</strong></a>.
-              </li>
-              <li>
-                Disrupting Conventional Chip Design through the Open Source EDA Ecosystem. 
-                <a href="https://ieeexplore.ieee.org/abstract/document/10511336" target="_blank"><strong>EDTM’24</strong></a>.
-              </li>
-              <li>
-                Openfasoc: An open platform towards analog and mixed-signal automation and acceleration of chip design. 
-                <a href="https://ieeexplore.ieee.org/abstract/document/10153547" target="_blank"><strong>ISDCS’23</strong></a>.
-              </li>
-              <li>
-                An open source compatible framework to fully autonomous digital LDO generation. 
-                <a href="https://ieeexplore.ieee.org/abstract/document/10181884" target="_blank"><strong>ISCAS’23</strong></a>.
-              </li>
-              <li>
-                An open-source and autonomous temperature sensor in SkyWater 130 nm for comprehensive design space exploration. 
-                <a href="https://ieeexplore.ieee.org/abstract/document/9816083" target="_blank"><strong>SSC-L’22</strong></a>.
-              </li>
-              <li>
-                The missing pieces of open design enablement: A recent history of Google efforts. 
-                <a href="https://dl.acm.org/doi/abs/10.1145/3400302.3415736" target="_blank"><strong>ICCAD’20</strong></a>.
-              </li>
-              <li>
-                Bridging academic open-source EDA to real-world usability. 
-                <a href="https://dl.acm.org/doi/abs/10.1145/3400302.3415734" target="_blank"><strong>ICCAD’20</strong></a>.
-              </li>
+                  Human Language to Analog Layout Using GLayout Layout Automation Framework. 
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank"><strong>MLCAD’24</strong></a>.
+                </li>
+                <li>
+                  Disrupting Conventional Chip Design through the Open Source EDA Ecosystem. 
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10511336" target="_blank"><strong>EDTM’24</strong></a>.
+                </li>
+                <li>
+                  Openfasoc: An open platform towards analog and mixed-signal automation and acceleration of chip design. 
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10153547" target="_blank"><strong>ISDCS’23</strong></a>.
+                </li>
+                <li>
+                  An open source compatible framework to fully autonomous digital LDO generation. 
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10181884" target="_blank"><strong>ISCAS’23</strong></a>.
+                </li>
+                <li>
+                  An open-source and autonomous temperature sensor in SkyWater 130 nm for comprehensive design space exploration. 
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9816083" target="_blank"><strong>SSC-L’22</strong></a>.
+                </li>
+                <li>
+                  The missing pieces of open design enablement: A recent history of Google efforts. 
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3400302.3415736" target="_blank"><strong>ICCAD’20</strong></a>.
+                </li>
+                <li>
+                  Bridging academic open-source EDA to real-world usability. 
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3400302.3415734" target="_blank"><strong>ICCAD’20</strong></a>.
+                </li>
               </ul>
             </div>
           </div>
@@ -53,7 +61,7 @@
       </div>
 
       <!-- Section: Cryogenic / Nano Device Technology -->
-      <div class="section">
+      <div id="cryogenic" class="section">
         <h2>Cryogenic / Nano Device Technology</h2>
         <div class="section-content">
           <div class="two-column-layout">
@@ -89,7 +97,7 @@
       </div>
 
       <!-- Section: Energy Efficient Computing Systems -->
-      <div class="section">
+      <div id="energy-efficient" class="section">
         <h2>Energy Efficient Computing Systems and Hardware Security</h2>
         <div class="section-content">
           <div class="two-column-layout">
@@ -113,7 +121,7 @@
       </div>
 
       <!-- Section: Bio-Electrical / Biometrics Research -->
-      <div class="section">
+      <div id="bio-electrical" class="section">
         <h2>Bio-Electrical / Electro-Chemical / Biometrics Research</h2>
         <div class="section-content">
           <div class="two-column-layout">
@@ -138,7 +146,7 @@
       </div>
 
       <!-- Section: Academic Publications -->
-      <div class="section">
+      <div id="academic-publications" class="section">
         <h2>Academic Publications</h2>
         <div class="section-content">
           <div class="publications-container">
@@ -168,6 +176,39 @@
 </template>
 
 <style scoped>
+.scroll-menu {
+  background-color: #f8f9fa; /* Light background */
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-menu li {
+  margin-right: 20px;
+}
+
+.scroll-menu a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.scroll-menu a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
 .content-wrapper {
   padding: 0 40px; /* Add left and right padding */
 }

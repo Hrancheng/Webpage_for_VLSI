@@ -16,27 +16,56 @@
   <h4>News & Publications</h4>
   <ul>
     <li>
-      <strong>(11/2024 published in SSC-M) SSC-M PICO Chronicles:</strong> News From the Open Source Community. The IEEE Solid-State Circuits Magazine Fall 2024 issue reports on several key developments in the open-source chip design community. The Chipathon 2023 concluded successfully with three teams from different countries taping out chips using open source IC design tools and PDK in GlobalFoundries GF180MCU technology. Also, the 2024 edition of Chipathon has launched with a focus on analog layout automation using GLayout, attracting over 753 participants from various backgrounds including academia, industry, and hobbyists. 
+      <strong>(11/2024 published in SSC-M)</strong>  SSCS PICO Chronicles: SSCS PICO Chronicles: News From the Open Source Community. [Society News]. 
       <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(09/2024 published in MLCAD) Human Language to Analog Layout Using GLayout:</strong> Published in MLCAD 2024. The GLayout framework uses a Large Language Model (LLM) to translate analog layout into an expressive, technology-independent, compact text representation called StrictSyntax, allowing the LLM to understand analog layout through fine-tuning and in-context learning. The open source GLayout and evaluation set provide a starting point for future development of LLM-based analog layout automation.
+      <strong>(09/2024 published in MLCAD)</strong>  Human Language to Analog Layout Using GLayout Layout Automation Framework. 
       <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in SSC-M) Open se cura: an auditable and transparent hardware root-of-trust in 16 nm</strong> Open Se Cura’s security subsystem, OpenTitan, was implemented on 16-nm technology using the OpenFASOC framework and OpenROAD tools, achieving reliable performance across a 0.4–1V supply and 1–350 MHz frequency range. This advancement in open-source platforms illustrates their growing impact in aligning secure AI hardware and software, showcasing the open-source community's potential to transform secure, scalable computing systems.
+      <strong>(07/2024 published in SSC-M)</strong>  SSCS PICO Chronicles: News From the Open Source Community [Society News]. 
+
       <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in SSC-M) Laser-Induced Graphene Sensors With Open-Source Silicon:</strong> Published in SSC-M 2024, This study presents a multifunctional wearable sensing system that combines flexible laser-induced graphene (LIG) sensors with an open-source analog front-end (AFE) chip, enabling temperature, humidity, and strain detection. Characterizations demonstrate the system's potential for affordable and flexible monitoring of body temperature, respiration, sweat, and gestures in personal healthcare applications.
+      <strong>(07/2024 published in SSC-M)</strong>  Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source silicon results at 4 K. 
       <a href="https://ieeexplore.ieee.org/document/10584418" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(07/2024 published in SSC-M) Circuits for Quantum With Open Source Silicon:</strong> Published in SSC-M 2024. Our collaborative work in cryogenic silicon technology has yielded key advancements, including 4-K cryogenic models available on the NIST data repository, supporting quantum circuit research at extremely low temperatures. Using open-source tools like OpenFASOC, we are facilitating custom circuit generation and enabling broader access to cryogenic design resources, reducing barriers and costs in this field.
+      <strong>(07/2024 published in SSC-M)</strong>  Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way for Low-Cost and Robust Flexible Wearable Sensing. 
       <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">Read More</a>
     </li>
     <li>
-      <strong>(11/2023 published in SSC-M) SSC-M PICO Chronicles:</strong> News From the Open Source Community. Published in SSC-M 2023, the IEEE Solid-State Circuits Society (SSCS) is advancing open-source chip design through its "Code-a-Chip" Travel Grant Awards program, which provides aspiring chip designers with collaborative learning opportunities and exposure to the entire chip design process. Now in its fourth round, the program enables winners to attend the VLSI Symposium 2024, fostering a global exchange of knowledge and best practices in IC design and open-source ecosystems.
+      <strong>(07/2024 published in SSC-M)</strong>  Open Se Cura: First silicon results of an auditable and transparent hardware root-of-trust system using open electronic design automation in 16 nm. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(06/2024 published in SSC-M)</strong>  Fully integrated multifunctional sensor and open-source ASIC for flexible wearables. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(05/2024 published in NEMS)</strong>  LIG-OSS: Integrated Laser-Induced-Graphene Sensor and Open-Source Silicon Chip for an Affordable and Robust Wearable Sensing System with Precise Temperature, Humidity, and Strain Sensing Capability. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(04/2024 published in ISQED)</strong>  Quantum Circuit Simulation with Fast Tensor Decision Diagram. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(03/2024 published in EDTM)</strong>  Disrupting Conventional Chip Design through the Open Source EDA Ecosystem. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(03/2024 published in NIST)</strong>  CMOS Sky130 Primitives measured at cryogenic temperatures. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(01/2024 published in arXiv)</strong>  ConSmax: Hardware-Friendly Alternative Softmax with Learnable Parameters. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(01/2024 published in SSC-L)</strong>  A Fully Integrated, Automatically Generated DC–DC Converter Maintaining >75% Efficiency From 398 K Down to 23 K Across Wide Load Ranges in 12-nm FinFET. 
       <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
     </li>
   </ul>
