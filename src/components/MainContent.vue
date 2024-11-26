@@ -475,4 +475,61 @@ ul {
   opacity: 0;
 }
 
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center align for mobile */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px; /* Smaller image size for mobile */
+  }
+
+  .profile-info p {
+    font-size: 1em; /* Adjust font size for readability */
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .news-section, .contact-section, .funding-collaborations {
+    margin: 20px; /* Reduce horizontal margins */
+  }
+
+  .animation-section {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .animated-image {
+    height: 100%; /* Adjust height dynamically */
+  }
+
+  .sponsor-logos img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 150px;
+    height: 150px; /* Further reduce image size for extra small screens */
+  }
+
+  .profile-info p {
+    font-size: 0.9em; /* Slightly smaller text for compact screens */
+  }
+
+  .news-section ul, .contact-section ul {
+    padding-left: 10px; /* Reduce padding for compact view */
+  }
+
+  .sponsor-logos img {
+    max-width: 80px;
+    max-height: 60px; /* Smaller sponsor logos */
+  }
+}
 </style>
+
