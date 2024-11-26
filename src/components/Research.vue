@@ -275,5 +275,48 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .scroll-menu {
+    padding: 10px 20px; /* Reduce padding */
+  }
+
+  .scroll-menu ul {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start;
+  }
+
+  .scroll-menu li {
+    margin-right: 0; /* No right margin for vertical stacking */
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  .content-wrapper {
+    padding: 0 20px; /* Reduce horizontal padding */
+  }
+
+  h1 {
+    font-size: 2em; /* Reduce font size */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Reduce font size */
+  }
+
+  .two-column-layout {
+    flex-direction: column; /* Stack columns vertically */
+    gap: 15px;
+  }
+
+  .images-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section-image {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
 </style>
+
 
