@@ -1,21 +1,64 @@
 <template>
   <div class="research-page">
     <HeaderBar />
-    <nav class="scroll-menu">
-      <ul>
-        <li><a href="#openfasoc">OpenFASoC</a></li>
-        <li><a href="#cryogenic">Cryogenic / Nano Device Technology</a></li>
-        <li><a href="#energy-efficient">Energy Efficient Computing Systems</a></li>
-        <li><a href="#bio-electrical">Bio-Electrical / Biometrics Research</a></li>
-        <li><a href="#academic-publications">Academic Publications</a></li>
+    <!-- Scroll Menu -->
+    <div class="scroll-menu">
+  <ul>
+    <li>
+      <a @click.prevent="toggleAccordion('openfasoc')">IC Design Automation with Open Source Tools</a>
+      <ul v-if="expandedSection === 'openfasoc'" class="publication-list">
+        <li v-for="pub in sections.openfasoc.publications" :key="pub.id">
+          {{ pub.title }} 
+          <a :href="pub.link" target="_blank" class="conference-link">({{ pub.conference }})</a>
+        </li>
       </ul>
-    </nav>
+    </li>
+    <li>
+      <a @click.prevent="toggleAccordion('cryogenic')">Cryogenic Characterization for Bleeding Edge Circuitry</a>
+      <ul v-if="expandedSection === 'cryogenic'" class="publication-list">
+        <li v-for="pub in sections.cryogenic.publications" :key="pub.id">
+          {{ pub.title }} 
+          <a :href="pub.link" target="_blank" class="conference-link">({{ pub.conference }})</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a @click.prevent="toggleAccordion('energy-efficient')">Secure Edge AI and Hardware Security</a>
+      <ul v-if="expandedSection === 'energy-efficient'" class="publication-list">
+        <li v-for="pub in sections['energy-efficient'].publications" :key="pub.id">
+          {{ pub.title }} 
+          <a :href="pub.link" target="_blank" class="conference-link">({{ pub.conference }})</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a @click.prevent="toggleAccordion('bio-electrical')">Digital Health, Biosensors, and Body Coupling Communication</a>
+      <ul v-if="expandedSection === 'bio-electrical'" class="publication-list">
+        <li v-for="pub in sections['bio-electrical'].publications" :key="pub.id">
+          {{ pub.title }} 
+          <a :href="pub.link" target="_blank" class="conference-link">({{ pub.conference }})</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a @click.prevent="toggleAccordion('academic-publications')">Academic Publications</a>
+      <ul v-if="expandedSection === 'academic-publications'" class="publication-list">
+        <li v-for="pub in sections['academic-publications'].publications" :key="pub.id">
+          {{ pub.title }} 
+          <a :href="pub.link" target="_blank" class="conference-link">({{ pub.conference }})</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
     <div class="spacer"></div>
     <div class="content-wrapper">
 
       <!-- Section: OpenFASoC -->
       <div id="openfasoc" class="section" style="margin-top: 40px;">
-        <h2>OpenFASoC: An Open Source Framework for Fully Automated Mixed-Signal SoC Generation (IC Design Automation)</h2>
+        <h2>IC Design Automation with Open Source Tools</h2>
         <div class="section-content">
           <div class="two-column-layout">
             <div class="images-container">
@@ -62,7 +105,7 @@
 
       <!-- Section: Cryogenic / Nano Device Technology -->
       <div id="cryogenic" class="section">
-        <h2>Cryogenic / Nano Device Technology</h2>
+        <h2>Cryogenic Characterization for Bleeding Edge Circuitry</h2>
         <div class="section-content">
           <div class="two-column-layout">
             <div class="images-container">
@@ -98,7 +141,7 @@
 
       <!-- Section: Energy Efficient Computing Systems -->
       <div id="energy-efficient" class="section">
-        <h2>Energy Efficient Computing Systems and Hardware Security</h2>
+        <h2>Secure Edge AI and Hardware Security</h2>
         <div class="section-content">
           <div class="two-column-layout">
             <div class="images-container">
@@ -122,7 +165,7 @@
 
       <!-- Section: Bio-Electrical / Biometrics Research -->
       <div id="bio-electrical" class="section">
-        <h2>Bio-Electrical / Electro-Chemical / Biometrics Research</h2>
+        <h2>Digital Health, Biosensors, and Body Coupling Communication</h2>
         <div class="section-content">
           <div class="two-column-layout">
             <div class="images-container">
@@ -175,38 +218,141 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "ResearchPage",
+  data() {
+    return {
+      expandedSection: null, // Keeps track of the currently expanded section
+      sections: {
+  openfasoc: {
+    publications: [
+      {
+        id: 1,
+        title: "Human Language to Analog Layout Using GLayout Layout Automation Framework.",
+        link: "https://dl.acm.org/doi/abs/10.1145/3670474.3685971",
+        conference: "MLCAD’24",
+      },
+      {
+        id: 2,
+        title: "An open source compatible framework to fully autonomous digital LDO generation.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10181884",
+        conference: "ISCAS’23",
+      },
+    ],
+  },
+  cryogenic: {
+    publications: [
+      {
+        id: 1,
+        title: "Unlocking Circuits for Quantum With Open Source Silicon at 4K.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10584405",
+        conference: "SSC-M’24",
+      },
+      {
+        id: 2,
+        title: "CMOS Sky130 Primitives measured at cryogenic temperatures.",
+        link: "https://doi.org/10.18434/mds2-2997",
+        conference: "NIST’23",
+      },
+    ],
+  },
+  "energy-efficient": {
+    publications: [
+      {
+        id: 1,
+        title: "Open se cura: First silicon results of an auditable and transparent hardware root-of-trust system in 16 nm.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10584369",
+        conference: "SSC-M’24",
+      },
+    ],
+  },
+  "bio-electrical": {
+    publications: [
+      {
+        id: 1,
+        title: "Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10584418",
+        conference: "SSC-M’24",
+      },
+    ],
+  },
+  "academic-publications": {
+    publications: [
+      {
+        id: 1,
+        title: "SSCS PICO Chronicles: Code-a-Chip Travel Grant Awards at VLSI 2024.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10752803",
+        conference: "SSC-M’24",
+      },
+      {
+        id: 2,
+        title: "SSCS PICO Chronicles: News From the Open Source Community.",
+        link: "https://ieeexplore.ieee.org/abstract/document/10584346",
+        conference: "SSC-M’24",
+      },
+    ],
+  },
+},
+    };
+  },
+  methods: {
+    toggleAccordion(section) {
+      this.expandedSection = this.expandedSection === section ? null : section;
+    },
+  },
+};
+</script>
+
 <style scoped>
 .scroll-menu {
-  background-color: #f8f9fa; /* Light background */
-  padding: 10px 40px;
+  background-color: #f8f9fa;
+  padding: 0px 40px; /* Reduced padding for a smaller appearance */
   position: sticky;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-menu ul {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.scroll-menu li {
-  margin-right: 20px;
+.scroll-menu > ul > li {
+  margin-bottom: 1px; /* Less spacing between items */
 }
 
 .scroll-menu a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.9em; /* Slightly smaller font size */
   font-weight: bold;
   color: #007bff;
-  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .scroll-menu a:hover {
   color: #0056b3; /* Darker blue on hover */
+}
+
+.publication-list {
+  padding: 0;
+  list-style-type: disc;
+}
+
+.publication-list li {
+  margin-bottom: 1px; /* Reduced spacing between publication items */
+}
+
+.publication-list a {
+  font-size: 0.9em;
+  color: #040e17;
+  text-decoration: none;
+}
+
+.publication-list a:hover {
+  text-decoration: underline;
 }
 
 .content-wrapper {
@@ -257,7 +403,7 @@ h2 {
 
 ul {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.2;
   margin: 0; /* Remove default UL padding */
   padding: 0; /* Remove default UL margin */
   list-style-position: inside; /* Keep bullets inside the container */
@@ -278,7 +424,7 @@ a:hover {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .scroll-menu {
-    padding: 10px 20px; /* Reduce padding */
+    padding: 30px 20px; /* Reduce padding */
   }
 
   .scroll-menu ul {
@@ -318,5 +464,4 @@ a:hover {
   }
 }
 </style>
-
 
