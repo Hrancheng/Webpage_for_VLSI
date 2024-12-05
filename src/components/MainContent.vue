@@ -1,81 +1,7 @@
 <!-- This is Vue component for main part of Home page-->
 <template>
   <div class="container">
-    <div class="profile-container">
-      <div class="profile-info">
-        <div class="biography">
-          <!-- Modify text below to modify introduction part at the right of the image -->
-          <p>Welcome to my lab. My research focuses on low-power and energy-efficient IC design, applying Large Language Models in analog layout generation, Biosensors for DNA synthesis and sequencing,  Integrated laser-induced graphene Sensors, open-source EDA, and analog and mixed-signal IC design automation.
-            If you are interested in this type of research, please email me a resume and give me an idea of potential topics you may like to work on (mehdi@umich.edu, mehdi_saligane@brown.edu)</p>
-        </div>
-      </div>
-    </div>
-    <div class="contributions-contact-container">
-
-      <div class="news-section">
-  <h4>News & Publications</h4>
-  <ul>
-    <li>
-      <strong>(11/2024 published in SSC-M)</strong>  SSCS PICO Chronicles: SSCS PICO Chronicles: News From the Open Source Community. [Society News]. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(09/2024 published in MLCAD)</strong>  Human Language to Analog Layout Using GLayout Layout Automation Framework. 
-      <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(07/2024 published in SSC-M)</strong>  SSCS PICO Chronicles: News From the Open Source Community [Society News]. 
-
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(07/2024 published in SSC-M)</strong>  Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source silicon results at 4 K. 
-      <a href="https://ieeexplore.ieee.org/document/10584418" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(07/2024 published in SSC-M)</strong>  Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way for Low-Cost and Robust Flexible Wearable Sensing. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(07/2024 published in SSC-M)</strong>  Open Se Cura: First silicon results of an auditable and transparent hardware root-of-trust system using open electronic design automation in 16 nm. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(06/2024 published in SSC-M)</strong>  Fully integrated multifunctional sensor and open-source ASIC for flexible wearables. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(05/2024 published in NEMS)</strong>  LIG-OSS: Integrated Laser-Induced-Graphene Sensor and Open-Source Silicon Chip for an Affordable and Robust Wearable Sensing System with Precise Temperature, Humidity, and Strain Sensing Capability. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(04/2024 published in ISQED)</strong>  Quantum Circuit Simulation with Fast Tensor Decision Diagram. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(03/2024 published in EDTM)</strong>  Disrupting Conventional Chip Design through the Open Source EDA Ecosystem. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(03/2024 published in NIST)</strong>  CMOS Sky130 Primitives measured at cryogenic temperatures. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(01/2024 published in arXiv)</strong>  ConSmax: Hardware-Friendly Alternative Softmax with Learnable Parameters. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-    <li>
-      <strong>(01/2024 published in SSC-L)</strong>  A Fully Integrated, Automatically Generated DC–DC Converter Maintaining >75% Efficiency From 398 K Down to 23 K Across Wide Load Ranges in 12-nm FinFET. 
-      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
-    </li>
-  </ul>
-</div>
-
-
- 
-</div>
-
-<div class="animation-section">
+    <div class="animation-section">
       <transition name="fade" mode="out-in">
         <img
           :src="images[currentImageIndex]"
@@ -85,6 +11,80 @@
         />
       </transition>
     </div>
+    <div class="profile-container">
+      <div class="profile-info">
+        <div class="biography">
+          <!-- Modify text below to modify introduction part at the right of the image -->
+          <div class="bio-content">
+        <img src="/assets/Saligane.png" alt="Profile Picture" class="profile-picture" />
+        <p>
+          Welcome to my lab. I'm a tenure-track professor at Brown University. My research focuses on low-power and energy-efficient IC design, applying AI in analog layout generation, Biosensors for DNA synthesis and sequencing, Integrated laser-induced graphene Sensors, open-source EDA, and analog and mixed-signal IC design automation.
+          If you are interested in this type of research, please email me a resume and give me an idea of potential topics you may like to work on (mehdi@umich.edu, mehdi_saligane@brown.edu).
+        </p>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="contributions-contact-container">
+
+      <div class="news-section">
+  <h4>News & Publications</h4>
+  <ul>
+    <li>
+      <strong>(11/2024)</strong>  SSCS PICO Chronicles: SSCS PICO Chronicles: News From the Open Source Community. [Society News]. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(09/2024)</strong>  Human Language to Analog Layout Using GLayout Layout Automation Framework, presented by Ali Hammond at MLCAD. 
+      <a href="https://dl.acm.org/doi/abs/10.1145/3670474.3685971" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024)</strong>  Unlocking Circuits for Quantum With Open Source Silicon: A first look at measured open source silicon results at 4 K, presented by Anhang Li at SSC-M.
+      <a href="https://ieeexplore.ieee.org/document/10584418" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024)</strong>  Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon: Paving the Way for Low-Cost and Robust Flexible Wearable Sensing, presented by Anhang Li and Hongyi Wu at SSC-M. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(07/2024)</strong>  Open Se Cura: First silicon results of an auditable and transparent hardware root-of-trust system using open electronic design automation in 16 nm, presented by Guancheng Tao at SSC-M. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(06/2024)</strong>  Fully integrated multifunctional sensor and open-source ASIC for flexible wearables, presented by Anhang Li and Hongyi Wu at SSC-M. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(05/2024)</strong>  LIG-OSS: Integrated Laser-Induced-Graphene Sensor and Open-Source Silicon Chip for an Affordable and Robust Wearable Sensing System with Precise Temperature, Humidity, and Strain Sensing Capability, presented by Anhang Li, Hongyi Wu and Gregory Kielian at NEMS. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(04/2024)</strong>  Quantum Circuit Simulation with Fast Tensor Decision Diagram, presented by Qirui Zhang at ISQED. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(03/2024)</strong>  Disrupting Conventional Chip Design through the Open Source EDA Ecosystem, presented by Chetanya Goyal at EDTM. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(03/2024)</strong>  CMOS Sky130 Primitives measured at cryogenic temperatures, presented by Akin Akturk and Anhang Li at NIST. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(01/2024)</strong>  ConSmax: Hardware-Friendly Alternative Softmax with Learnable Parameters, presented by Shiwei Liu at ICCAD. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+    <li>
+      <strong>(01/2024)</strong>  A Fully Integrated, Automatically Generated DC–DC Converter Maintaining >75% Efficiency From 398 K Down to 23 K Across Wide Load Ranges in 12-nm FinFET, presented by Anhang Li at SSC-L. 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10584346" target="_blank">Read More</a>
+    </li>
+  </ul>
+</div>
+
+
+ 
+</div>
+
 
 
 
@@ -92,13 +92,11 @@
 <div class="contact-section">
       <h4>Contact Information</h4>
       <p>
-        Phone: (734) 615-3499<br />
-        Office: 2431 EECS, 1301 Beal Ave, Ann Arbor, MI 48109
+        Phone: (734) 272-5288<br />
+        Email: mehdi@umich.edu, mehdi_saligane@brown.edu<br />
+        OpenFASOC: https://github.com/idea-fasoc/OpenFASOC
       </p>
       <div class="networks">
-        <a href="mailto:mehdi@umich.edu" target="_blank">
-          <img src="/assets/email.jpeg" alt="Email Icon" />
-        </a>
         <a href="https://scholar.google.com/citations?user=u1UAQ2QAAAAJ&hl=en" target="_blank">
           <img src="/assets/gs.png" alt="Google Scholar Icon" />
         </a>
@@ -117,6 +115,7 @@
       Our research is supported by collaboration with and funding from notable institutions and industry leaders. We are proud to partner with Google Research, Fitbit, National Institute of Standards and Technology (NIST), KLA, and the U.S. Consulate in Japan. We also receive silicon donations from GlobalFoundries and Intel.
     </p>
     <div class="sponsor-logos">
+      <img src="/assets/KLA.png" alt="Google Research Logo" />
       <img src="/assets/NIST.png" alt="Google Research Logo" />
       <img src="/assets/ONR.png" alt="Fitbit Logo" />
       <img src="/assets/CA.png" alt="NIST Logo" />
@@ -186,6 +185,21 @@ h1 {
   align-items: center; /* Align items vertically */
   margin-bottom: 1em;
   padding: 1em;
+}
+
+.bio-content {
+  display: flex; /* Align image and text side by side */
+  align-items: center; /* Vertically align the text with the image */
+  gap: 20px; /* Space between image and text */
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+  width: 150px; /* Set width for the profile picture */
+  height: 150px; /* Set height for the profile picture */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image maintains aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
 }
 
 .profile-text {

@@ -1,17 +1,23 @@
 <template>
   <header class="header-bar">
-    <div class="logo-text">Mehdi's Lab</div>
+    <div class="logo-text">Saligane's Lab</div>
     <nav class="navigation">
-      <ul>
+      <ul class="main-menu">
         <li><router-link to="/home">Home</router-link></li>
-        <!--<li><router-link to="/about">About</router-link></li> -->
         <li><router-link to="/people">People</router-link></li>
-        <li><router-link to="/research">Research</router-link></li>
+        <li class="dropdown">
+          <router-link to="/research" class="dropdown-toggle">Research</router-link>
+          <ul class="dropdown-menu">
+            <li><router-link to="/research/openfasoc">IC Design Automation</router-link></li>
+            <li><router-link to="/research/cryogenic">Cryogenic Design</router-link></li>
+            <li><router-link to="/research/energy-efficient">Hardware Security</router-link></li>
+            <li><router-link to="/research/codesign">Edge AI Accelerators @ software/hardware co-design</router-link></li>
+            <li><router-link to="/research/bio-electrical">Digital Health and Biosensors</router-link></li>
+            <!-- 根据需要添加更多的研究部分 -->
+          </ul>
+        </li>
         <li><router-link to="/prospective_student">Prospective Student</router-link></li>
         <li><router-link to="/outreach">Outreach</router-link></li>
-        <!-- <li><li><router-link to="/news">News</router-link></li> -->
-       <!-- <li><router-link to="/teaching">Teaching</router-link></li> -->
-        <!-- ...other navigation items -->
       </ul>
     </nav>
   </header>
@@ -19,7 +25,7 @@
 
 <script>
 export default {
-  name: 'HeaderBar'
+  name: 'HeaderBar',
 };
 </script>
 
@@ -34,57 +40,124 @@ export default {
 }
 
 .logo-text {
-  font-size: 2.5rem; /* Larger font size for emphasis */
-  font-family: 'Georgia', serif; /* Stylish font */
-  font-weight: 700; /* Bold weight */
-  color: #2c3e50; /* Darker shade for elegance */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-  letter-spacing: 1px; /* Add some spacing between letters */
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 
-.navigation ul {
+.navigation .main-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.navigation li a {
+.navigation .main-menu > li {
+  position: relative; /* 确保下拉菜单相对于父元素定位 */
+}
+
+.navigation .main-menu > li > a,
+.dropdown-toggle {
   margin: 0 10px;
   text-decoration: none;
   color: #000;
-  font-weight: 500; /* Slightly bold links */
-  transition: color 0.3s ease; /* Smooth hover effect */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.navigation li a:hover {
-  color: #007BFF; /* Change color on hover */
+.navigation .main-menu > li > a:hover,
+.dropdown-toggle:hover {
+  color: #007BFF;
 }
-/* Mobile-specific styles */
+
+/* 下拉菜单样式 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFF;
+  border: 1px solid #DDD;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  display: none; /* 初始状态下隐藏下拉菜单 */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* 当鼠标悬停时显示下拉菜单 */
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #007BFF;
+  background-color: #F0F0F0;
+}
+
+/* 防止下拉菜单的 ul 继承 flex 布局 */
+.dropdown-menu {
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+/* 移动端样式 */
 @media (max-width: 768px) {
   .header-bar {
-    flex-direction: column; /* Stack logo and nav vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 1rem; /* Maintain consistent padding */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .logo-text {
-    font-size: 2rem; /* Reduce font size for smaller screens */
-    margin-bottom: 1rem; /* Add spacing below the logo */
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
-  .navigation ul {
-    flex-direction: column; /* Stack navigation items vertically */
-    width: 100%; /* Take full width of the screen */
+  .navigation .main-menu {
+    flex-direction: column;
+    width: 100%;
   }
 
-  .navigation li {
-    margin: 0.5rem 0; /* Add spacing between items */
+  .navigation .main-menu > li {
+    margin: 0.5rem 0;
   }
 
-  .navigation li a {
-    font-size: 1.2rem; /* Increase link font size for better readability */
-    color: #000; /* Ensure color consistency */
+  .navigation .main-menu > li > a,
+  .dropdown-toggle {
+    font-size: 1.2rem;
+  }
+
+  /* 移动端下拉菜单调整 */
+  .dropdown-menu {
+    position: static;
+    display: none; /* 在移动端初始状态下也隐藏下拉菜单 */
+    box-shadow: none;
+    border: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block; /* 通过添加类名控制下拉菜单显示 */
+  }
+
+  /* 禁用移动端的悬停效果 */
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 }
 </style>

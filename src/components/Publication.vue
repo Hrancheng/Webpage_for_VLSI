@@ -1,6 +1,5 @@
 <!-- This is Vue component for main part of Publication page -->
 <template>
-<HeaderBar />
   <div class="research-container">
     <h2 class="section-title">Publications</h2>
     <p class="google-scholar">

@@ -4,29 +4,9 @@
     <!-- Scroll Menu -->
   
     <div class="content-wrapper">
-    <!-- New Section: Accelerating Chip Design -->
-    <div id="accelerating-chipdesign" class="section" style="margin-top: 40px;">
 
-      <div class="section-content">
-        <div class="single-column-layout">
-          <!-- Sentence -->
-          <div class="text-container">
-            <p>
-              Accelerating chipdesign, Tapeouts by my amazing students over the past few years
-            </p>
-          </div>
-
-          <!-- Images -->
-          <div class="images-container">
-            <img src="/assets/Timeline.png" alt="Chip Design 1" class="section-image" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-      <!-- Section: OpenFASoC -->
-      <div id="openfasoc" class="section" style="margin-top: 40px;">
+     <!-- Section: OpenFASoC -->
+     <div id="openfasoc" class="section" style="margin-top: 40px;">
         <h2>Open-Source Chip Design and EDA Tooling</h2>
         <div class="section-content">
           <div class="two-column-layout">
@@ -72,108 +52,7 @@
         </div>
       </div>
 
-      <!-- Section: Cryogenic / Nano Device Technology -->
-      <div id="cryogenic" class="section">
-        <h2>Cryogenic Design</h2>
-        <div class="section-content">
-          <div class="two-column-layout">
-            <div class="images-container">
-              <img src="/assets/nano_1.png" alt="Cryogenic Nano Device Image 1" class="section-image" />
-              <img src="/assets/nano_2.png" alt="Cryogenic Nano Device Image 2" class="section-image" />
-            </div>
-            <div class="publications-container">
-              <ul>
-                <li>
-                  Unlocking Circuits for Quantum With Open Source Silicon at 4K. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10584405" target="_blank"><strong>SSC-M’24</strong></a>.
-                </li>
-                <li>
-                  Zhang, Q. (2024). Domain-Specific Acceleration: From Efficient Vision Processing Hardware to High-Performance Quantum Computing Software (Doctoral dissertation).
-                </li>
-                <li>
-                  A fully integrated, automatically generated DC-DC converter from 398 K down to 23 K in 12 nm FinFET. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10379433" target="_blank"><strong>SSC-L’24</strong></a>.
-                </li>
-                <li>
-                  CMOS Sky130 Primitives measured at cryogenic temperatures. 
-                  <a href="https://doi.org/10.18434/mds2-2997" target="_blank"><strong>NIST’23</strong></a>.
-                </li>
-                <li>
-                  Cryogenic Modeling for Open-Source Process Design Kit Technology. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10310944" target="_blank"><strong>BCICTS’23</strong></a>.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Section: Energy Efficient Computing Systems -->
-      <div id="energy-efficient" class="section">
-        <h2>Hardware Security</h2>
-        <div class="section-content">
-          <div class="two-column-layout">
-            <div class="images-container">
-              <img src="/assets/Research3/Secure.png" alt="Energy Efficient Computing System" class="section-image" />
-            </div>
-            <div class="publications-container">
-              <ul>
-                <li>
-                  Open se cura: First silicon results of an auditable and transparent hardware root-of-trust system in 16 nm. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10584369" target="_blank"><strong>SSC-M’24</strong></a>.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-     
-
-      <div id="codesign" class="section">
-        <h2>Edge AI Accelerators @ software/hardware co-design</h2>
-        <div class="section-content">
-          <div class="two-column-layout">
-            <div class="images-container">
-              <img src="/assets/Research5/Consmax.png" alt="Energy Efficient Computing System" class="section-image" />
-            </div>
-            <div class="publications-container">
-              <ul>
-                <li>
-                  ConSmax: Hardware-Friendly Alternative Softmax with Learnable Parameters. 
-                  <a href="https://arxiv.org/pdf/2402.10930" target="_blank"><strong>arXiv’24</strong></a>.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Section: Bio-Electrical / Biometrics Research -->
-      <div id="bio-electrical" class="section">
-        <h2>Digital Health, Biosensors, and Body Coupling Communication</h2>
-        <div class="section-content">
-          <div class="two-column-layout">
-            <div class="images-container">
-              <img src="/assets/Research4/OpenFasoc.png" alt="Bio-Electrical Research 1" class="section-image" />
-            </div>
-            <div class="publications-container">
-              <ul>
-                <li>
-                  Rapid Prototyping of Laser-Induced Graphene Sensors With Open-Source Silicon. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10584418" target="_blank"><strong>SSC-M’24</strong></a>.
-                </li>
-                <li>
-                  LIG-OSS: Integrated Laser-Induced-Graphene Sensor and Open-Source Silicon Chip. 
-                  <a href="https://ieeexplore.ieee.org/abstract/document/10639937" target="_blank"><strong>NEMS’24</strong></a>.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
 <!-- Section: Academic Publications -->
 <!--
@@ -421,17 +300,6 @@ a:hover {
   margin: 0 auto; /* Center the image horizontally */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
-
-#codesign .section-image {
-  width: 100%; /* Make the image take the full width of its container */
-  max-width: 600px; /* Set a maximum width for the image */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensure proper centering inside flex or grid */
-  margin: 0 auto; /* Center the image horizontally */
-  border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-
 /* Specific styling for the "Secure Edge AI and Hardware Security" section */
 #bio-electrical .section-image {
   width: 50%; /* Make the image take the full width of its container */

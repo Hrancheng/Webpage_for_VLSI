@@ -1,6 +1,5 @@
 <!-- This is Vue component for main part of Teaching page -->
 <template>
-<HeaderBar />
   <div class="teaching-container">
     <h2 class="section-title">Teaching</h2>
 
