@@ -12,7 +12,7 @@
           <!-- Sentence -->
           <div class="text-container">
             <p>
-              Accelerating chipdesign, Tapeouts by my amazing students over the past few years
+              Accelerating chipdesign, tapeouts by my amazing students over the past few years:
             </p>
           </div>
 
