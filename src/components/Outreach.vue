@@ -17,7 +17,7 @@ The ultimate goal is to explore, bridge, and accelerate U.S. -Japan collaboratio
         </p>
         <div class="images-grid">
           <img src="/assets/japan.png" alt="Japan Collaboration Image 1" class="section-image" />
-          <img src="/assets/Japan1.png" alt="Japan Collaboration Image 2" class="section-image" />
+          <img src="/assets/Japan3.png" alt="Japan Collaboration Image 2" class="section-image" />
         </div>
         <p>
           <ul>
