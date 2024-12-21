@@ -69,6 +69,7 @@ export default {
 .content-wrapper {
   padding: 0 20px; /* Adds padding on the left and right */
   text-align: left;
+  margin-top: 130px;
 }
 
 h1 {
@@ -151,6 +152,7 @@ a:hover {
 @media (max-width: 768px) {
   .content-wrapper {
     padding: 0 10px;
+    margin-top: 130px;
   }
 
   h2 {

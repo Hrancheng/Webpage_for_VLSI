@@ -226,6 +226,7 @@ export default {
 
 .content-wrapper {
   padding: 0 40px; /* Add left and right padding */
+  margin-top: 130px;
 }
 
 h1 {

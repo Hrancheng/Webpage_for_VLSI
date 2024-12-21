@@ -55,6 +55,7 @@
   /* Apply padding only to the content wrapper */
   .content-wrapper {
     padding: 40px 200px; /* Add padding to the left and right */
+    margin-top: 130px;
   }
   
   /* Header styling */
@@ -86,6 +87,7 @@
   /* Adjust content wrapper padding for smaller screens */
   .content-wrapper {
     padding: 20px; /* Reduced padding for smaller screens */
+    margin-top: 130px;
   }
 
   /* Spacer adjustment */
@@ -106,27 +108,6 @@
   p {
     font-size: 0.95em; /* Slightly smaller text for readability on mobile */
     line-height: 1.4; /* Adjust line spacing for smaller screens */
-  }
-}
-
-/* Extra-small screens (mobile phones) */
-@media (max-width: 480px) {
-  /* Further reduce padding on very small screens */
-  .content-wrapper {
-    padding: 10px;
-  }
-
-  /* Adjust font sizes for extra small screens */
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
-  p {
-    font-size: 0.9em;
   }
 }
 </style>

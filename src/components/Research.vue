@@ -18,8 +18,9 @@
 
           <!-- Images -->
           <div class="images-container">
-            <img src="/assets/Timeline.png" alt="Chip Design 1" class="section-image" />
+            <img src="/assets/timeline.png" alt="Chip Design 1" class="enlarged-image" />
           </div>
+
         </div>
       </div>
     </div>
@@ -326,6 +327,16 @@ export default {
   color: #0056b3; /* Darker blue on hover */
 }
 
+.enlarged-image {
+  width: 90%;
+  max-width: 1200px; /* Set a reasonable maximum width */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
 .publication-list {
   padding: 0;
   list-style-type: disc;
@@ -347,6 +358,7 @@ export default {
 
 .content-wrapper {
   padding: 0 40px; /* Add left and right padding */
+  margin-top: 130px;
 }
 
 h1 {

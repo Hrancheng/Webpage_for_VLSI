@@ -13,7 +13,6 @@
             <li><router-link to="/research/energy-efficient">Hardware Security</router-link></li>
             <li><router-link to="/research/codesign">Edge AI Accelerators @ software/hardware co-design</router-link></li>
             <li><router-link to="/research/bio-electrical">Digital Health and Biosensors</router-link></li>
-            <!-- 根据需要添加更多的研究部分 -->
           </ul>
         </li>
         <li><router-link to="/prospective_student">Prospective Student</router-link></li>
@@ -25,18 +24,55 @@
 
 <script>
 export default {
-  name: 'HeaderBar',
+  name: "HeaderBar",
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const header = document.querySelector(".header-bar");
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("scrolled");
+        header.classList.remove("shrink");
+      }
+    },
+  },
 };
 </script>
 
 <style scoped>
 .header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(0px);
+  height: 100px; /* Default height */
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.header-bar.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar.shrink {
+  height: 80px; /* Maintain original height */
+  padding: 1rem; /* Maintain original padding */
 }
 
 .logo-text {
@@ -46,6 +82,11 @@ export default {
   color: #2c3e50;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
+  transition: font-size 0.3s ease;
+}
+
+.header-bar.shrink .logo-text {
+  font-size: 2.5rem; /* Maintain original logo text size */
 }
 
 .navigation .main-menu {
@@ -56,7 +97,7 @@ export default {
 }
 
 .navigation .main-menu > li {
-  position: relative; /* 确保下拉菜单相对于父元素定位 */
+  position: relative;
 }
 
 .navigation .main-menu > li > a,
@@ -74,7 +115,6 @@ export default {
   color: #007BFF;
 }
 
-/* 下拉菜单样式 */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -86,11 +126,11 @@ export default {
   margin: 0;
   padding: 0.5rem 0;
   z-index: 1000;
-  display: none; /* 初始状态下隐藏下拉菜单 */
+  display: none;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block; /* 当鼠标悬停时显示下拉菜单 */
+  display: block;
 }
 
 .dropdown-menu li {
@@ -107,16 +147,6 @@ export default {
   background-color: #F0F0F0;
 }
 
-/* 防止下拉菜单的 ul 继承 flex 布局 */
-.dropdown-menu {
-  flex-direction: column;
-}
-
-.dropdown-menu li {
-  display: block;
-}
-
-/* 移动端样式 */
 @media (max-width: 768px) {
   .header-bar {
     flex-direction: column;
@@ -143,21 +173,15 @@ export default {
     font-size: 1.2rem;
   }
 
-  /* 移动端下拉菜单调整 */
   .dropdown-menu {
     position: static;
-    display: none; /* 在移动端初始状态下也隐藏下拉菜单 */
+    display: none;
     box-shadow: none;
     border: none;
   }
 
   .dropdown.open .dropdown-menu {
-    display: block; /* 通过添加类名控制下拉菜单显示 */
-  }
-
-  /* 禁用移动端的悬停效果 */
-  .dropdown:hover .dropdown-menu {
-    display: none;
+    display: block;
   }
 }
 </style>

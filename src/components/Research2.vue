@@ -215,6 +215,7 @@ export default {
 
 .content-wrapper {
   padding: 0 40px; /* Add left and right padding */
+  margin-top: 130px;
 }
 
 h1 {
@@ -353,9 +354,6 @@ a:hover {
     margin-bottom: 10px; /* Add spacing between items */
   }
 
-  .content-wrapper {
-    padding: 0 20px; /* Reduce horizontal padding */
-  }
 
   h1 {
     font-size: 2em; /* Reduce font size */

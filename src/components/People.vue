@@ -100,21 +100,23 @@ Dr. Saligane currently serves as the Chair of the Analog Working Group, a member
     </div>
 
     <h1 class="phd-students-heading">Alumni</h1>
-    <div class="student" v-for="alumnus in alumni" :key="alumnus.name">
-      <img :src="alumnus.image" alt="Photo of alumnus" class="student-photo" />
-      <div class="student-info">
-        <h2>{{ alumnus.name }}</h2>
-        <div class="social-links">
-          <a v-if="alumnus.linkedin" :href="alumnus.linkedin" target="_blank">
-            <img src='/assets/linkedin.png' alt="LinkedIn" />
+<div class="student" v-for="alumnus in alumni" :key="alumnus.name">
+  <img :src="alumnus.image" alt="Photo of alumnus" class="student-photo" />
+  <div class="student-info">
+    <h2>{{ alumnus.name }}</h2>
+    <div class="social-links">
+      <!-- LinkedIn Link -->
+      <a v-if="alumnus.twitter" :href="`https://linkedin.com/${alumnus.twitter}`" target="_blank">
+            <img src='/assets/linkedin.png'>
           </a>
-          <a v-if="alumnus.email" :href="`mailto:${alumnus.email}`">
-            <img src="/assets/email.jpeg" alt="Email" />
-          </a>
-        </div>
-        <p>{{ alumnus.description }}</p>
-      </div>
+      <!-- Email Link -->
+      <a v-if="alumnus.email" :href="`mailto:${alumnus.email}`">
+        <img src="/assets/email.jpeg" alt="Email" />
+      </a>
     </div>
+    <p>{{ alumnus.description }}</p>
+  </div>
+</div>
 
 
 </template>
@@ -126,14 +128,14 @@ export default {
       phdStudents: [
         {
           name: 'Guanchen Tao',
-          twitter: 'example',
+          twitter: 'in/guanchentao/',
           email:"example",
           image: '/assets/tao.png',
           description: 'Guanchen Tao received his bachelor\'s degree in Electrical Engineering at Zhejiang University. His research interests include Machine Learning hardware and hardware efficient algorithm. He is currently working on open-source PPA emulation platform for transformer hardware accelerator.'
         },
         {
           name: 'Hongyi Wu',
-          twitter: 'example',
+          twitter: 'in/hongyi-wu-947336261/',
           email:"example",
           image: '/assets/wu.png', // Replace with the actual path
           description: 'Hongyi received his bachelor\'s degree in Applied Physics at the University of Science and Technology of China. He is now pursuing the M.S. degree in Electrical and Computer Engineering at University of Michigan. His research interests include analog/mixed-signal/digital integrated circuit design and related applications. He is now working on IC for DNA synthesis and biosensing.'
@@ -157,7 +159,7 @@ export default {
       VisitingScholars: [
         {
           name: 'Juan Sebastian Moya',
-          twitter: 'example',
+          twitter: 'in/juan-sebastian-moya/',
           email:"example",
           image: '/assets/Juan.png', // Replace with the actual path
           description: 'Juan Sebastián Moya Baquero received his bachelor\'s degree in Electronics Engineering at Universidad de Los Andes (Colombia), then he was part of the CI Brazil Program between 2012 and 2014, and subsequently, he received his M.S. degree in Electrical Engineering at Universidade Federal de Santa Catarina (Brazil). In 2023, he got his Ph.D. in Engineering, in the Electronics Engineering area, at the Universidad Industrial de Santander (Colombia). His research interests include analog and RF circuit design, and he is currently working on body coupling communication modeling and circuit design as an exchange visitor.'
@@ -209,14 +211,14 @@ export default {
         },
         {
           name: 'Ayushman Tripathi',
-          twitter: 'example',
+          twitter: 'in/ayushmantripathi/',
           email:"example",
           image: '/assets/Ayushman.png', // Replace with the actual path
           description: 'Ayushman is a 2nd year MS student in ECE (IC/VLSI) at University of Michigan, Ann Arbor. He received his bachelor\'s degree in Electrical Engineering at Indian Institute of Technology Gandhinagar. Prior to joining UMich, he was working on development of electro-optical image sensors at Indian Space Research Organization (ISRO). His areas of interest include Analog/RF and Low power IC design. He is currently working at Texas Instruments.'
         },
         {
           name: 'Madhulika Lingamguntla',
-          twitter: 'example',
+          twitter: 'in/lingamguntla-madhulika-799511115/',
           email:"example",
           image: '/assets/Madhulika.png', // Replace with the actual path
           description: 'Madhulika received her bachelor\'s degree in Electrical Engineering from Indian Institute of Technology Gandhinagar and is working at Apple. Prior to starting her Masters, she worked in the Indian Space Research Organization in the domain of electro-optical image sensors. Her research interests include mixed signal circuit design,bio-sensing circuits and design of low power, low noise amplifiers for various applications. Currently she is working on the design of residue amplifiers for low power pipeline ADC.'
@@ -239,7 +241,7 @@ export default {
           name: 'Guanru Wang',
           twitter: 'example',
           email:"wguanru@umich.edu",
-          image: '/assets/people.png', // Replace with the actual path
+          image: '/assets/guanru.png', // Replace with the actual path
           description: 'He is currently an ASIC Engineer at Cisco.'
         },
         // More alumni data...
@@ -247,14 +249,14 @@ export default {
       undergraduateStudents: [
         {
           name: 'Ali Hammoud',
-          twitter: 'example',
+          twitter: 'in/ali-billal-hammoud/',
           email:"example",
           image: '/assets/Ali.png',
           description: 'Ali Hammoud is a student at the University of Michigan studying computer engineering, based in Ann Arbor Michigan. He is currently doing research in Professor Mehdi Saligane’s group at Michigan. He is interested in exploring novel analog automation approaches—using reinforcement learning and large language models to automate analog layout and sizing—and codesign of hardware with AI architectures.'
         },
         {
           name: 'Arlene Dai',
-          twitter: 'example',
+          twitter: 'in/arlene-d/',
           email:"example",
           image: '/assets/Arlene.jpg',
           description: 'Arlene is a third year student studying electrical engineering. She is currently conducting research in Dr Mehdi Saligane’s group exploring how LLMs can be used to generate analog layout.'
@@ -264,7 +266,7 @@ export default {
       masterStudents: [
         {
           name: 'Junyi Luo',
-          twitter: 'example',
+          twitter: 'in/junyi-luo-875185277/',
           email:"example",
           image: '/assets/Luo.jpg',
           description: 'Junyi Luo is a MS student studying ECE in University of Michigan now. He is interested in VLSI, FPGA and AI. He received his B.E. degree from the School of Microelectronics, Southern University of Science and Technology，Shenzhen, China, in 2023.'
@@ -284,65 +286,6 @@ export default {
           description: 'Situo(Stoke) Song is a master’s student in ECE department at University of Michigan, Ann Arbor. His research focuses on Digital/Analog circuit design and AI. Currently, he is working on Physical Unclonable Function(PUF). Holding a bachelor’s degree in EE from Huazhong University of Science and Technology, Situo Song brings a solid foundation in lithography, system verilog, Cadence and python programming.'
         },
         // Add more master students here
-      ],
-      Undergraduate_Master_students: [
-        {
-          name: 'Ali Hammoud',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/Ali.png', // Replace with the actual path
-          description: 'Ali Hammoud is a student at the University of Michigan studying computer engineering, based in Ann Arbor Michigan. He is currently doing research in Professor Mehdi Saligane’s group at Michigan. He is interested in exploring novel analog automation approaches—using reinforcement learning and large language models to automate analog layout and sizing—and codesign of hardware with AI architectures.'
-        },
-        {
-          name: 'Arlene Dai',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/Arlene.jpg', // Replace with the actual path
-          description: 'Arlene is a third year student studying electrical engineering. She is currently conducting research in Dr Mehdi Saligane’s group exploring how LLMs can be used to generate analog layout.'
-        },
-        {
-          name: 'Junyi Luo',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/Luo.jpg', // Replace with the actual path
-          description: 'Junyi Luo is a MS student studying ECE in University of Michigan now. He is interested in VLSI, FPGA and AI. He received his B.E. degree from the School of Microelectronics, Southern University of Science and Technology，Shenzhen, China, in 2023.'
-        },
-        {
-          name: 'Landon Butcher',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/Butcher.jpg', // Replace with the actual path
-          description: 'Landon is a 3rd-year senior studying Computer Engineering. He has worked from the chip layout to PCB layout level. His research interests include secure computing, SDR and mixed-signal systems.'
-        },
-        {
-          name: 'Tianxiang Li',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/tianxiang.jpg', // Replace with the actual path
-          description: 'Tianxiang Li is a senior student majoring in Computer Engineering. He focused on analog layout automation through a prompt-based process using large language models (LLMs).'
-        },
-        {
-          name: 'Stoke Song',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/song.jpg', // Replace with the actual path
-          description: 'Situo(Stoke) Song is a master’s student in ECE department at University of Michigan, Ann Arbor. His research focuses on Digital/Analog circuit design and AI. Currently, he is working on Physical Unclonable Function(PUF). Holding a bachelor’s degree in EE from Huazhong University of Science and Technology, Situo Song brings a solid foundation in lithography, system verilog, Cadence and python programming.'
-        },
-        {
-          name: 'Sakib Pathen',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/Pathen.png', // Replace with the actual path
-          description: 'Sakib Pathen is a current student at the University of Michigan studying electrical engineering. He is currently working on automating layout for analog designs through machine learning. His research interests include mixed-signal design, hardware for machine learning, and open-source EDA.'
-        },
-        {
-          name: 'Yuhao Yuan',
-          twitter: 'example',
-          email:"example",
-          image: '/assets/people.png', // Replace with the actual path
-          description: 'Yuhao received his bachelor’s degree in Electrical Engineering at University of Illinois at Urbana Champaign, IL, 61801. He subsequently started pursuing an M.S. degree at University of Michigan, Ann Arbor, MI, 48109, with a concentration of applied electromagnetics and RF circuits. His research interests include RF/mmWave IC design. Yuhao is taking an internship at Peregrine Semiconductor, Arlington Heights, IL, 60004 starting Fall 2024.'
-        }
-        // ...other students
       ]
     };
   }
@@ -355,6 +298,11 @@ export default {
 /* General styling */
 * {
   box-sizing: border-box;
+}
+
+/* Add space under the header */
+.people-section {
+  padding-top: 130px; /* Adjust this value to match the height of the header */
 }
 
 /* Heading Styling */
@@ -378,8 +326,6 @@ export default {
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Photo Styling */
 .student-photo {
@@ -448,5 +394,4 @@ export default {
     margin-bottom: 10px;
   }
 }
-
 </style>
