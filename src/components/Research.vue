@@ -18,7 +18,7 @@
 
           <!-- Images -->
           <div class="images-container">
-            <img src="/assets/timeline.png" alt="Chip Design 1" class="enlarged-image" />
+            <img src="/assets/Timeline.png" alt="Chip Design 1" class="enlarged-image" />
           </div>
 
         </div>
